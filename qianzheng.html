@@ -193,6 +193,32 @@
     footer p { margin: 0 0 8px; }
     footer a { word-break: break-all; }
     .short dd { font-size: .95rem; }
+    .crumbs { color: var(--muted); font-size: .9rem; margin: 0 0 12px; }
+    .crumbs a { text-decoration: none; }
+    .nav-drop { position: relative; }
+    .nav-drop > summary {
+      min-height: 44px; display: inline-flex; align-items: center; padding: 0 10px;
+      border-radius: 8px; color: var(--a); font-size: .95rem;
+      list-style: none; cursor: pointer; font: inherit;
+    }
+    .nav-drop > summary::-webkit-details-marker { display: none; }
+    .nav-drop[open] > summary { background: #eef6f2; }
+    .nav-drop-list {
+      position: absolute; left: 0; top: 100%; z-index: 5;
+      min-width: 10rem; padding: 6px; margin: 0;
+      background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(31, 27, 22, .08);
+    }
+    .nav-drop-list a, .nav-drop-list .here {
+      display: flex; min-height: 44px; align-items: center; padding: 0 12px;
+      border-radius: 8px; text-decoration: none; color: var(--a);
+    }
+    .nav-drop-list .here { color: var(--muted); font-weight: 600; }
+    .change-bar {
+      margin: 0 0 10px; padding: 8px 10px; background: var(--warnbg);
+      color: var(--warn); border-radius: 10px; font-size: .9rem;
+    }
+    .change-bar a { color: var(--warn); font-weight: 600; }
 
   </style>
 </head>
@@ -201,14 +227,23 @@
     <div class="topnav-inner">
       <a class="nav-brand" href="/">签证政策</a>
       <div class="nav-links">
-        <a href="/" class="here">签证种类</a>
-        <a href="/h2">查季节工</a>
+        <details class="nav-drop">
+          <summary>国家</summary>
+          <div class="nav-drop-list">
+            <a href="/#guojia">国家目录</a>
+            <a href="/meiguo">美国</a>
+            <a href="/jianada">加拿大</a>
+            <a href="/yingguo">英国</a>
+            <a href="/aodaliya">澳大利亚</a>
+          </div>
+        </details>
         <a href="/gengxin">政策更新</a>
       </div>
     </div>
   </nav>
   <div class="wrap">
     <header>
+      <p class="crumbs"><a href="/">签证政策</a> / <a href="/meiguo">美国</a> / 签证种类说明</p>
       <p class="brand">签证政策</p>
       <h1>美国签证种类说明</h1>
       <p class="sub">临时去美国干活，一般要雇主先向移民局递请愿。例外主要是 E-1、E-2、E-3、TN，以及部分 F、M、J。中国护照没有免签。本站不收费，也不代办。</p>
@@ -216,8 +251,8 @@
     </header>
 
     <main>
-      <p class="toc-label">跳到一种</p>
-      <nav class="toc" aria-label="签证目录">
+      <p class="toc-label">能碰到的</p>
+      <nav class="toc" aria-label="能碰到的签证">
         <a href="#b2">B-1/B-2</a>
         <a href="#f1">F-1</a>
         <a href="#m1">M-1</a>
@@ -227,14 +262,31 @@
         <a href="#h1b">H-1B</a>
         <a href="#l1">L-1</a>
         <a href="#h3">H-3</a>
-        <a href="#closed">办不了</a>
-        <a href="#rare">少见</a>
+      </nav>
+      <p class="toc-label">办不了</p>
+      <nav class="toc" aria-label="办不了的签证">
+        <a href="#esta">ESTA</a>
+        <a href="#e1e2">E-1/E-2</a>
+        <a href="#e3">E-3</a>
+        <a href="#tn">TN</a>
+        <a href="#h1b1">H-1B1</a>
+      </nav>
+      <p class="toc-label">不是这条路</p>
+      <nav class="toc" aria-label="一般不是这条路">
+        <a href="#o1">O-1</a>
+        <a href="#p">P</a>
+        <a href="#r1">R-1</a>
+        <a href="#k1">K-1</a>
+        <a href="#eb">EB</a>
       </nav>
 
       <p class="note">依据美国国务院、USCIS 公开说明整理。批准率、排队天数、收费数字以官网当时为准，这里不编。H-1C 护士签 2009 年已失效，不列。</p>
 
+      <section class="group" id="reachable">
+        <h2>能碰到的</h2>
     <article class="visa" id="b2">
       <h2><span class="code">B-1/B-2</span>旅游 / 商务</h2>
+      <!--gengxin:bar:qianzheng#b2--><!--/gengxin:bar:qianzheng#b2-->
       <dl>
         <dt>用来干什么</dt>
         <dd>B-2 是旅游、探亲、看病。B-1 是开会、谈生意、不拿美国工资的短期商务。两张常打在同一本护照上。不是去打工。</dd>
@@ -252,6 +304,9 @@
     </article>
     <article class="visa" id="f1">
       <h2><span class="code">F-1</span>留学</h2>
+      <!--gengxin:bar:qianzheng#f1-->
+<p class="change-bar"><a href="/gengxin#c-290860faba">2026-09-15 起：I-539、I-765 换新版，旧表当天拒收</a></p>
+      <!--/gengxin:bar:qianzheng#f1-->
       <dl>
         <dt>用来干什么</dt>
         <dd>去 SEVP 认证的学校读学术课程或语言。先被录取，学校发 I-20，再办学生签。</dd>
@@ -269,6 +324,7 @@
     </article>
     <article class="visa" id="m1">
       <h2><span class="code">M-1</span>职业 / 技术学校</h2>
+      <!--gengxin:bar:qianzheng#m1--><!--/gengxin:bar:qianzheng#m1-->
       <dl>
         <dt>用来干什么</dt>
         <dd>去职业或技术学校，不是普通大学学位。也要 SEVP 学校发 I-20。</dd>
@@ -286,6 +342,9 @@
     </article>
     <article class="visa" id="j1">
       <h2><span class="code">J-1</span>交流访问</h2>
+      <!--gengxin:bar:qianzheng#j1-->
+<p class="change-bar"><a href="/gengxin#c-290860faba">2026-09-15 起：I-539、I-765 换新版，旧表当天拒收</a></p>
+      <!--/gengxin:bar:qianzheng#j1-->
       <dl>
         <dt>用来干什么</dt>
         <dd>交流访问：实习 intern、培训 trainee、暑期工、学者、教师等，看具体类别。不是自己找一份工就办得了。</dd>
@@ -303,6 +362,7 @@
     </article>
     <article class="visa" id="h2a">
       <h2><span class="code">H-2A</span>农业季节工</h2>
+      <!--gengxin:bar:qianzheng#h2a--><!--/gengxin:bar:qianzheng#h2a-->
       <dl>
         <dt>用来干什么</dt>
         <dd>临时或季节性农活：农场、苗圃、畜牧、农机等。雇主证明美国本地人不够，且不影响同类美国工人工资。</dd>
@@ -320,6 +380,7 @@
     </article>
     <article class="visa" id="h2b">
       <h2><span class="code">H-2B</span>非农季节工</h2>
+      <!--gengxin:bar:qianzheng#h2b--><!--/gengxin:bar:qianzheng#h2b-->
       <dl>
         <dt>用来干什么</dt>
         <dd>临时非农工作：厨师、酒店客房、园林、部分建筑等。也要证明本地人不够。</dd>
@@ -337,6 +398,9 @@
     </article>
     <article class="visa" id="h1b">
       <h2><span class="code">H-1B</span>专业职业</h2>
+      <!--gengxin:bar:qianzheng#h1b-->
+<p class="change-bar"><a href="/gengxin#c-0268ca7ba4">2026-07-17 起：2027 财年 H-1B 名额已满</a></p>
+      <!--/gengxin:bar:qianzheng#h1b-->
       <dl>
         <dt>用来干什么</dt>
         <dd>专业职业：工作一般要学士学位或同等对口学历。不是去体验几个月，也不是季节工。</dd>
@@ -354,6 +418,7 @@
     </article>
     <article class="visa" id="l1">
       <h2><span class="code">L-1</span>公司内部调动</h2>
+      <!--gengxin:bar:qianzheng#l1--><!--/gengxin:bar:qianzheng#l1-->
       <dl>
         <dt>用来干什么</dt>
         <dd>把你从海外关联公司派到美国：L-1A 管经理/高管，L-1B 管专门知识。不是新找一家美国公司入职。</dd>
@@ -371,6 +436,7 @@
     </article>
     <article class="visa" id="h3">
       <h2><span class="code">H-3</span>培训</h2>
+      <!--gengxin:bar:qianzheng#h3--><!--/gengxin:bar:qianzheng#h3-->
       <dl>
         <dt>用来干什么</dt>
         <dd>雇主在美国培训你，或特殊教育交流。培训必须有计划，不能拿来当普通劳动力。</dd>
@@ -386,12 +452,13 @@
       
       <p class="src"><a href="https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-3-nonimmigrant-trainee-or-special-education-exchange-visitor">USCIS：H-3</a></p>
     </article>
-
+      </section>
 
       <section class="group" id="closed">
-        <h2>中国护照基本办不了</h2>
+        <h2>办不了</h2>
     <article class="visa" id="esta">
       <h2><span class="code dim">ESTA</span>免签计划</h2>
+      <!--gengxin:bar:qianzheng#esta--><!--/gengxin:bar:qianzheng#esta-->
       <dl>
         <dt>用来干什么</dt>
         <dd>免签国家公民先在网上拿电子旅行许可，再短期去美国旅游或商务，一般不超过 90 天。</dd>
@@ -409,6 +476,7 @@
     </article>
     <article class="visa" id="e1e2">
       <h2><span class="code dim">E-1 / E-2</span>条约商人 / 投资人</h2>
+      <!--gengxin:bar:qianzheng#e1e2--><!--/gengxin:bar:qianzheng#e1e2-->
       <dl>
         <dt>用来干什么</dt>
         <dd>E-1 做条约国与美国之间的实质性贸易。E-2 在美国投资并经营企业。要条约国国籍。</dd>
@@ -426,6 +494,7 @@
     </article>
     <article class="visa" id="e3">
       <h2><span class="code dim">E-3</span>澳大利亚专业工作</h2>
+      <!--gengxin:bar:qianzheng#e3--><!--/gengxin:bar:qianzheng#e3-->
       <dl>
         <dt>用来干什么</dt>
         <dd>澳大利亚公民从事专业职业。类似 H-1B，但只给澳籍。</dd>
@@ -443,6 +512,7 @@
     </article>
     <article class="visa" id="tn">
       <h2><span class="code dim">TN</span>加墨专业工作</h2>
+      <!--gengxin:bar:qianzheng#tn--><!--/gengxin:bar:qianzheng#tn-->
       <dl>
         <dt>用来干什么</dt>
         <dd>加拿大、墨西哥公民按美墨加协定做指定专业工作。</dd>
@@ -460,6 +530,7 @@
     </article>
     <article class="visa" id="h1b1">
       <h2><span class="code dim">H-1B1</span>智利 / 新加坡专业工作</h2>
+      <!--gengxin:bar:qianzheng#h1b1--><!--/gengxin:bar:qianzheng#h1b1-->
       <dl>
         <dt>用来干什么</dt>
         <dd>智利、新加坡公民的专业职业名额，和普通 H-1B 分开。</dd>
@@ -479,9 +550,10 @@
       </section>
 
       <section class="group" id="rare">
-        <h2>一般不是这条路</h2>
+        <h2>不是这条路</h2>
     <article class="visa" id="o1">
       <h2><span class="code dim">O-1</span>杰出人才</h2>
+      <!--gengxin:bar:qianzheng#o1--><!--/gengxin:bar:qianzheng#o1-->
       <dl>
         <dt>用来干什么</dt>
         <dd>科学、艺术、教育、商业、体育或影视方面有杰出能力的人。</dd>
@@ -499,6 +571,7 @@
     </article>
     <article class="visa" id="p">
       <h2><span class="code dim">P</span>演艺 / 体育</h2>
+      <!--gengxin:bar:qianzheng#p--><!--/gengxin:bar:qianzheng#p-->
       <dl>
         <dt>用来干什么</dt>
         <dd>国际认可的运动员、演出团体，或文化交流性质的表演、教练。</dd>
@@ -516,6 +589,7 @@
     </article>
     <article class="visa" id="r1">
       <h2><span class="code dim">R-1</span>宗教工作者</h2>
+      <!--gengxin:bar:qianzheng#r1--><!--/gengxin:bar:qianzheng#r1-->
       <dl>
         <dt>用来干什么</dt>
         <dd>非营利宗教组织请你去做牧师或宗教职业。</dd>
@@ -533,6 +607,7 @@
     </article>
     <article class="visa" id="k1">
       <h2><span class="code dim">K-1</span>未婚夫妻</h2>
+      <!--gengxin:bar:qianzheng#k1--><!--/gengxin:bar:qianzheng#k1-->
       <dl>
         <dt>用来干什么</dt>
         <dd>美国公民的未婚夫/妻，去美国结婚。</dd>
@@ -550,6 +625,7 @@
     </article>
     <article class="visa" id="eb">
       <h2><span class="code dim">EB</span>移民类（绿卡）</h2>
+      <!--gengxin:bar:qianzheng#eb--><!--/gengxin:bar:qianzheng#eb-->
       <dl>
         <dt>用来干什么</dt>
         <dd>就业移民等类别是拿绿卡，不是短期签证。雇主担保、杰出人才、投资等，各走各的。</dd>
@@ -573,7 +649,7 @@
       <p>非官方。依据美国国务院 / USCIS 公开说明整理，以原文为准。</p>
       <p><a href="https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/all-visa-categories.html">国务院：签证种类一览</a></p>
       <p><a href="https://www.uscis.gov/working-in-the-united-states/temporary-nonimmigrant-workers">USCIS：临时非移民工人</a></p>
-      <p><a href="/">回签证总览</a> · <a href="/h2">查季节工</a></p>
+      <p><a href="/meiguo">回美国</a> · <a href="/">国家目录</a></p>
     </footer>
   </div>
 </body>

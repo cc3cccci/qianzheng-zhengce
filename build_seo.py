@@ -37,14 +37,30 @@ CSS = """
       color: var(--ink);
       background: var(--bg);
     }
-    header, main, footer, .banner, nav {
+    header, main, footer, .banner, .crumbs, .subnav {
       max-width: 920px;
       margin-left: auto;
       margin-right: auto;
     }
+    .topnav { border-bottom: 1px solid var(--line); background: var(--bg); }
+    .topnav-inner {
+      max-width: 920px; margin: 0 auto; padding: 4px 20px;
+      display: flex; flex-wrap: wrap; align-items: center; gap: 4px 18px;
+    }
+    .nav-brand {
+      color: var(--a); font-weight: 600; letter-spacing: .12em; font-size: .78rem;
+      text-decoration: none; min-height: 44px; display: inline-flex; align-items: center;
+    }
+    .nav-links { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 6px; }
+    .nav-links a {
+      min-height: 44px; display: inline-flex; align-items: center; padding: 0 10px;
+      border-radius: 8px; text-decoration: none; color: var(--a); font-size: .95rem;
+    }
     header { padding: 28px 20px 8px; }
-    nav { padding: 0 20px 8px; font-size: .95rem; }
-    nav a { margin-right: 14px; }
+    .crumbs { padding: 0 20px; color: var(--muted); font-size: .9rem; }
+    .crumbs a { text-decoration: none; }
+    .subnav { padding: 0 20px 8px; font-size: .95rem; }
+    .subnav a { margin-right: 14px; }
     h1 { font-size: 1.6rem; margin: 0 0 6px; letter-spacing: .02em; }
     .sub { color: var(--muted); margin: 0; }
     .banner {
@@ -116,12 +132,28 @@ BANNER = (
 )
 
 NAV = (
-    '<nav>'
-    '<a href="/">首页</a>'
-    '<a href="/gangwei.html">全部岗位</a>'
-    '<a href="/h2a.html">H-2A 农业</a>'
-    '<a href="/h2b.html">H-2B 非农</a>'
-    "</nav>"
+    '<nav class="topnav" aria-label="站点导航">'
+    '<div class="topnav-inner">'
+    '<a class="nav-brand" href="/">签证政策</a>'
+    '<div class="nav-links">'
+    '<a href="/#guojia">国家</a>'
+    '<a href="/gengxin">政策更新</a>'
+    "</div></div></nav>"
+)
+
+CRUMBS = (
+    '<p class="crumbs">'
+    '<a href="/">签证政策</a> / '
+    '<a href="/meiguo">美国</a> / '
+    "%s</p>"
+)
+
+SUBNAV = (
+    '<p class="subnav">'
+    '<a href="/gangwei">全部岗位</a>'
+    '<a href="/h2a">H-2A 农业</a>'
+    '<a href="/h2b">H-2B 非农</a>'
+    "</p>"
 )
 
 FOOTER = """
@@ -192,7 +224,7 @@ def page_head(title: str, description: str, canonical: str, extra: str = "") -> 
   <link rel="canonical" href="{esc(canonical)}">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="zh_CN">
-  <meta property="og:site_name" content="H-2 查阅">
+  <meta property="og:site_name" content="签证政策">
   <meta property="og:title" content="{esc(title)}">
   <meta property="og:description" content="{esc(description)}">
   <meta property="og:url" content="{esc(canonical)}">
@@ -204,15 +236,17 @@ def page_head(title: str, description: str, canonical: str, extra: str = "") -> 
 """
 
 
-def wrap_page(title: str, description: str, path: str, body: str) -> str:
+def wrap_page(title: str, description: str, path: str, body: str, crumb: str) -> str:
     return (
         page_head(title, description, f"{SITE}/{path.lstrip('/')}")
         + "<body>\n"
+        + f"  {NAV}\n"
+        + f"  {CRUMBS % esc(crumb)}\n"
         + "  <header>\n"
-        + "    <h1>H-2 查阅</h1>\n"
+        + f"    <h1>{esc(crumb)}</h1>\n"
         + f'    <p class="sub">{esc(description)}</p>\n'
         + "  </header>\n"
-        + f"  {NAV}\n"
+        + f"  {SUBNAV}\n"
         + f'  <div class="banner">{esc(BANNER)}</div>\n'
         + f"  <main>\n{body}\n  </main>\n"
         + FOOTER
@@ -282,10 +316,11 @@ def write_gangwei(jobs: list[dict]) -> int:
         + "\n    </dl>"
     )
     html_out = wrap_page(
-        "全部 H-2A H-2B 岗位列表｜H-2 查阅",
+        "全部 H-2A H-2B 岗位列表｜签证政策",
         "美国劳工部公开的 H-2A / H-2B 季节工岗位完整中文列表：职位、雇主、地点、工期和工资。非官方，不收费，不代办签证。",
         "gangwei.html",
         body,
+        "全部岗位",
     )
     (ROOT / "gangwei.html").write_text(html_out, encoding="utf-8")
     return len(jobs)
@@ -301,39 +336,30 @@ def write_type_page(jobs: list[dict], visa: str, filename: str, title: str, lead
         f'    <p class="count">{esc(lead)}下列为前 {len(matched)} 条仍有效岗位。</p>\n'
         f"    {articles}"
     )
-    html_out = wrap_page(title, DESC, filename, body)
+    crumb = "H-2A 农业" if visa == "H-2A" else "H-2B 非农"
+    html_out = wrap_page(title, DESC, filename, body, crumb)
     (ROOT / filename).write_text(html_out, encoding="utf-8")
     return len(matched)
 
 
 def main() -> None:
     updated, jobs = load_jobs()
-    preview = jobs[:80]
-    snippet = "\n".join(job_article(j) for j in preview)
-    if len(jobs) > 80:
-        snippet += '\n<p class="meta">只先列出 80 条。完整列表见 <a href="/gangwei.html">全部岗位</a>。</p>'
-
-    index_path = ROOT / "index.html"
-    index_html = index_path.read_text(encoding="utf-8")
-    index_path.write_text(inject_list(index_html, "\n" + snippet + "\n    "), encoding="utf-8")
-
     n_all = write_gangwei(jobs)
     n_a = write_type_page(
         jobs,
         "H-2A",
         "h2a.html",
-        "H-2A 农业季节工岗位｜H-2 查阅",
+        "H-2A 农业季节工岗位｜签证政策",
         "H-2A 没有人数上限。农场、农机、畜牧。雇主通常要提供免费住房。",
     )
     n_b = write_type_page(
         jobs,
         "H-2B",
         "h2b.html",
-        "H-2B 非农季节工岗位｜H-2 查阅",
+        "H-2B 非农季节工岗位｜签证政策",
         "H-2B 每年法定 66,000 个名额。厨师、酒店、园林、建筑。住房多半要自己付钱。",
     )
     print(f"updated={updated}")
-    print(f"index.html #list articles={len(preview)}")
     print(f"gangwei.html jobs={n_all}")
     print(f"h2a.html articles={n_a}")
     print(f"h2b.html articles={n_b}")

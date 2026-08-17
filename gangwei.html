@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>全部 H-2A H-2B 岗位列表｜H-2 查阅</title>
+  <title>全部 H-2A H-2B 岗位列表｜签证政策</title>
   <meta name="description" content="美国劳工部公开的 H-2A / H-2B 季节工岗位完整中文列表：职位、雇主、地点、工期和工资。非官方，不收费，不代办签证。">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://h2-chaxun.pages.dev/gangwei.html">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="zh_CN">
-  <meta property="og:site_name" content="H-2 查阅">
-  <meta property="og:title" content="全部 H-2A H-2B 岗位列表｜H-2 查阅">
+  <meta property="og:site_name" content="签证政策">
+  <meta property="og:title" content="全部 H-2A H-2B 岗位列表｜签证政策">
   <meta property="og:description" content="美国劳工部公开的 H-2A / H-2B 季节工岗位完整中文列表：职位、雇主、地点、工期和工资。非官方，不收费，不代办签证。">
   <meta property="og:url" content="https://h2-chaxun.pages.dev/gangwei.html">
   <meta name="twitter:card" content="summary">
@@ -36,14 +36,30 @@
       color: var(--ink);
       background: var(--bg);
     }
-    header, main, footer, .banner, nav {
+    header, main, footer, .banner, .crumbs, .subnav {
       max-width: 920px;
       margin-left: auto;
       margin-right: auto;
     }
+    .topnav { border-bottom: 1px solid var(--line); background: var(--bg); }
+    .topnav-inner {
+      max-width: 920px; margin: 0 auto; padding: 4px 20px;
+      display: flex; flex-wrap: wrap; align-items: center; gap: 4px 18px;
+    }
+    .nav-brand {
+      color: var(--a); font-weight: 600; letter-spacing: .12em; font-size: .78rem;
+      text-decoration: none; min-height: 44px; display: inline-flex; align-items: center;
+    }
+    .nav-links { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 6px; }
+    .nav-links a {
+      min-height: 44px; display: inline-flex; align-items: center; padding: 0 10px;
+      border-radius: 8px; text-decoration: none; color: var(--a); font-size: .95rem;
+    }
     header { padding: 28px 20px 8px; }
-    nav { padding: 0 20px 8px; font-size: .95rem; }
-    nav a { margin-right: 14px; }
+    .crumbs { padding: 0 20px; color: var(--muted); font-size: .9rem; }
+    .crumbs a { text-decoration: none; }
+    .subnav { padding: 0 20px 8px; font-size: .95rem; }
+    .subnav a { margin-right: 14px; }
     h1 { font-size: 1.6rem; margin: 0 0 6px; letter-spacing: .02em; }
     .sub { color: var(--muted); margin: 0; }
     .banner {
@@ -103,11 +119,13 @@
   </style>
 </head>
 <body>
+  <nav class="topnav" aria-label="站点导航"><div class="topnav-inner"><a class="nav-brand" href="/">签证政策</a><div class="nav-links"><a href="/#guojia">国家</a><a href="/gengxin">政策更新</a></div></div></nav>
+  <p class="crumbs"><a href="/">签证政策</a> / <a href="/meiguo">美国</a> / 全部岗位</p>
   <header>
-    <h1>H-2 查阅</h1>
+    <h1>全部岗位</h1>
     <p class="sub">美国劳工部公开的 H-2A / H-2B 季节工岗位完整中文列表：职位、雇主、地点、工期和工资。非官方，不收费，不代办签证。</p>
   </header>
-  <nav><a href="/">签证种类</a><a href="/h2">查季节工</a><a href="/gangwei.html">全部岗位</a><a href="/h2a.html">H-2A 农业</a><a href="/h2b.html">H-2B 非农</a></nav>
+  <p class="subnav"><a href="/gangwei">全部岗位</a><a href="/h2a">H-2A 农业</a><a href="/h2b">H-2B 非农</a></p>
   <div class="banner">任何人向你收“办签费、名额费、介绍费”，都是违法的。H-2 必须由美国雇主申请，你不能自己递件。岗位原文以劳工部网站为准。</div>
   <main>
     <h2>全部可查岗位</h2>
