@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>H-2B 非农季节工岗位｜H-2 查阅</title>
+  <meta name="description" content="免费查阅美国劳工部公开的 H-2A 农业和 H-2B 非农季节工岗位，中文翻译职位、工资、开工日和雇主联系方式。非官方，不收费，不代办签证。">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://h2-chaxun.pages.dev/h2b.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:site_name" content="H-2 查阅">
+  <meta property="og:title" content="H-2B 非农季节工岗位｜H-2 查阅">
+  <meta property="og:description" content="免费查阅美国劳工部公开的 H-2A 农业和 H-2B 非农季节工岗位，中文翻译职位、工资、开工日和雇主联系方式。非官方，不收费，不代办签证。">
+  <meta property="og:url" content="https://h2-chaxun.pages.dev/h2b.html">
+  <meta name="twitter:card" content="summary">
+  
+  <style>
+    :root {
+      --bg: #f6f3ee;
+      --card: #fffdf8;
+      --ink: #1f1b16;
+      --muted: #5c564c;
+      --line: #e4ddd2;
+      --a: #1f5c45;
+      --a2: #163d2e;
+      --warn: #8a3b12;
+      --warnbg: #f8e8d8;
+      --h2a: #1f5c45;
+      --h2b: #2c4a7c;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font: 16px/1.6 "Source Han Sans SC", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+    }
+    header, main, footer, .banner, nav {
+      max-width: 920px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    header { padding: 28px 20px 8px; }
+    nav { padding: 0 20px 8px; font-size: .95rem; }
+    nav a { margin-right: 14px; }
+    h1 { font-size: 1.6rem; margin: 0 0 6px; letter-spacing: .02em; }
+    .sub { color: var(--muted); margin: 0; }
+    .banner {
+      margin-top: 16px;
+      margin-bottom: 16px;
+      padding: 12px 16px;
+      background: var(--warnbg);
+      color: var(--warn);
+      border-radius: 10px;
+    }
+    main { padding: 8px 20px 64px; }
+    h2 { font-size: 1.15rem; margin: 28px 0 10px; }
+    .cards { display: grid; gap: 10px; }
+    @media (min-width: 720px) { .cards.three { grid-template-columns: 1fr 1fr 1fr; } }
+    .note, .job {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 14px 16px;
+    }
+    .note strong { display: block; margin-bottom: 4px; }
+    .job { margin-bottom: 10px; }
+    .job h3 { margin: 0 0 4px; font-size: 1.05rem; }
+    .meta { color: var(--muted); font-size: .92rem; }
+    .tag {
+      display: inline-block;
+      font-size: .75rem;
+      padding: 1px 7px;
+      border-radius: 999px;
+      color: #fff;
+      vertical-align: middle;
+      margin-right: 6px;
+    }
+    .tag.a { background: var(--h2a); }
+    .tag.b { background: var(--h2b); }
+    a { color: var(--a); }
+    a:hover { color: var(--a2); }
+    .duties { margin: 8px 0 0; color: var(--muted); font-size: .92rem; }
+    .contact { margin-top: 8px; font-size: .92rem; }
+    footer {
+      padding: 0 20px 40px;
+      color: var(--muted);
+      font-size: .88rem;
+    }
+    .count { color: var(--muted); margin: 0 0 12px; }
+    dl { margin: 0; }
+    dt {
+      font-weight: 600;
+      margin-top: 14px;
+    }
+    dd {
+      margin: 2px 0 0;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>H-2 查阅</h1>
+    <p class="sub">免费查阅美国劳工部公开的 H-2A 农业和 H-2B 非农季节工岗位，中文翻译职位、工资、开工日和雇主联系方式。非官方，不收费，不代办签证。</p>
+  </header>
+  <nav><a href="/">签证种类</a><a href="/h2">查季节工</a><a href="/gangwei.html">全部岗位</a><a href="/h2a.html">H-2A 农业</a><a href="/h2b.html">H-2B 非农</a></nav>
+  <div class="banner">任何人向你收“办签费、名额费、介绍费”，都是违法的。H-2 必须由美国雇主申请，你不能自己递件。岗位原文以劳工部网站为准。</div>
+  <main>
+    <h2>先看懂再找工</h2>
+
+    <div class="cards three">
+      <div class="note"><strong>H-2A 农业</strong>没有人数上限。农场、农机、畜牧。雇主通常要提供免费住房。</div>
+      <div class="note"><strong>H-2B 非农</strong>每年法定 66,000 个名额。厨师、酒店、园林、建筑。住房多半要自己付钱。</div>
+      <div class="note"><strong>开工日 / 收工日</strong>就是这份合同的起止。错过开工日不会自动改期，最多是雇主还缺人时把你补进去，干到收工日。</div>
+    </div>
+
+    <h2>H-2B 非农季节工</h2>
+    <p class="count">H-2B 每年法定 66,000 个名额。厨师、酒店、园林、建筑。住房多半要自己付钱。下列为前 60 条仍有效岗位。</p>
+    <article class="job">
+  <h3><span class="tag b">H-2B</span>Stockers and Order Fillers</h3>
+  <div class="meta">Stocker &amp; Order Fulfillment · HIGH FREQUENCTEA · Teaneck, NJ</div>
+  <div class="meta">开工 2026-08-17 · 收工 2026-12-31 · $19.98–$20/小时</div>
+  <p class="duties">-Stocking products (herbal teas, skincare, natural herbal blends) for online shop and brick-and-mortar storefront. -Fulfilling online orders -Maintaining cleanliness of store locat…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26154-978918" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>First-Line Supervisors of Landscaping, Lawn Service, and Groundskeeping Workers</h3>
+  <div class="meta">Foreman · Landscapes Unlimited, LLC · East Hampton, NY</div>
+  <div class="meta">开工 2026-09-01 · 收工 2026-11-30 · $35.87/小时；Please see job duties and item F.d.5. for details.</div>
+  <p class="duties">Hands on manual labor working on staking/layout, drainage, bunkers, finishing, greens and tees, operating equipment, etc.; informs crews of the day&#x27;s planned activities and equips…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26169-027876" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Riggers</h3>
+  <div class="meta">Riggers · Citi Development &amp; Construction Inc. (CDCI) Tinian · Tinian, MP</div>
+  <div class="meta">开工 2026-09-01 · 收工 2027-08-31 · $20.98/小时；In addition to SCA hourly rates, the workers received an additional $5.09/hr. for Health &amp; Welfare</div>
+  <p class="duties">Perform complex rigging tasks including selecting and attaching appropriate rigging gear for various load types and sizes; Calculate the load weight and center of gravity for safe…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26196-102402" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Childcare Workers</h3>
+  <div class="meta">Child Care Assistant · Jupiter Learning Academy · Louisa, VA</div>
+  <div class="meta">开工 2026-09-09 · 收工 2027-05-31 · $14.38/小时；Raises and/or bonuses may be offered based on individual factors including work performance, skill, and tenure.</div>
+  <p class="duties">As included on the ONET website for 39-9011.00 (Child Care Workers), the Child Care Assistants are to perform a variety of tasks/duties on behalf of the infant/children within thei…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26177-053044" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>屠宰包装</h3>
+  <div class="meta">Game Meat Processor · Meier&#x27;s Game Processing LLC · Draper, UT</div>
+  <div class="meta">开工 2026-09-12 · 收工 2027-01-31 · $18.91/小时</div>
+  <p class="duties">Clean, cut and package game brought in from customers for their personal use. Must be able to lift fifty pounds and willing to work in animal blood, hides, and waste product. Must…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26180-062247" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>游乐场服务员</h3>
+  <div class="meta">Amusement &amp; Recreation Attendant – Carnival · Dixie Enterprise of Florida, Inc. · Yulee, FL</div>
+  <div class="meta">开工 2026-09-15 · 收工 2027-04-14 · $10.58–$17.78/小时；Merit increases and/or bonuses may be awarded at employer discretion.</div>
+  <p class="duties">***2nd RFI response*** Assembling Carnival Rides, Food Concessions Stands, Game Stands. Mobile amusement equipment is designed to assembled and disassembled with manual labor and s…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26183-073796" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Animal Caretakers</h3>
+  <div class="meta">Thoroughbred Horse Groom · Brendan Walsh Racing Stables LLC · Hallandale, FL</div>
+  <div class="meta">开工 2026-10-01 · 收工 2027-04-30 · $18.57/小时</div>
+  <p class="duties">Attends to the overall care of thoroughbred race horses including feeding, watering, maintenance of stalls and rack, cleaning, brushing, exercising, trimming of horses, disinfectin…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-077729" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Animal Caretakers</h3>
+  <div class="meta">Horse Show Groom · Mila Farms LLC · Valley Center, CA</div>
+  <div class="meta">开工 2026-10-01 · 收工 2027-06-30 · $19.42/小时</div>
+  <p class="duties">Attend to the overall care of show horses including groom, bathe, feed, water, bandage legs, maintain stalls and tack, inspect horses&#x27; condition and tack them up. Accompany horses…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-078312" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Animal Caretakers</h3>
+  <div class="meta">Thoroughbred Horse Groom · Maker Stable LLC · Hallandale Beach, FL</div>
+  <div class="meta">开工 2026-10-01 · 收工 2027-07-31 · $18.57/小时</div>
+  <p class="duties">Attends to the overall care of thoroughbred racehorses including feeding, watering, maintenance of stalls and rack, cleaning, brushing, exercising, trimming of horses, disinfecting…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-077615" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Animal Caretakers</h3>
+  <div class="meta">Thoroughbred Horse Groom · Kelli Martinez · Florence, KY</div>
+  <div class="meta">开工 2026-10-01 · 收工 2027-07-31 · $16.37/小时</div>
+  <p class="duties">Attends to the overall care of thoroughbred race horses including feeding, watering, maintenance of stalls and rack, cleaning, brushing, exercising, trimming of horses, disinfectin…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-077649" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Animal Caretakers</h3>
+  <div class="meta">Thoroughbred Racehorse Groom · Cherie Devaux Racing Inc · New Orleans, LA</div>
+  <div class="meta">开工 2026-10-01 · 收工 2027-04-30 · $14.22/小时</div>
+  <p class="duties">Attends to the overall care of thoroughbred race horses including feeding, watering, maintenance of stalls and rack, cleaning, brushing, exercising, trimming of horses, disinfectin…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-077581" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Animal Caretakers</h3>
+  <div class="meta">Thoroughbred Horse Groom · Rigney Racing LLC · Indiantown, FL</div>
+  <div class="meta">开工 2026-10-01 · 收工 2027-07-31 · $16.07/小时</div>
+  <p class="duties">Attends to the overall care of thoroughbred racehorses including feeding, watering, maintenance of stalls and rack, cleaning, brushing, exercising, trimming of horses, disinfecting…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-077612" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Animal Caretakers</h3>
+  <div class="meta">Thoroughbred Racehorse Groom · Joshtylane Equine · Bensalem, PA</div>
+  <div class="meta">开工 2026-10-01 · 收工 2027-07-31 · $17.14/小时</div>
+  <p class="duties">Attends to the overall care of thoroughbred race horses including feeding, watering, maintenance of stalls and rack, cleaning, brushing, exercising, trimming of horses, disinfectin…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-077624" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Animal Caretakers</h3>
+  <div class="meta">Stable Attendant · Eisaman Equine Services, Inc. · Williston, FL</div>
+  <div class="meta">开工 2026-10-01 · 收工 2027-06-20 · $15.74/小时</div>
+  <p class="duties">Attend to live horses. Duties include feed, water, bathe, exercise, walk and load horses. Clean and maintain stalls. Working split shift. Break area provided.</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26186-079126" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Animal Caretakers</h3>
+  <div class="meta">Thoroughbred Racehorse Groom · A Ferris Allen III · Laurel, MD</div>
+  <div class="meta">开工 2026-10-01 · 收工 2027-07-31 · $18.6/小时</div>
+  <p class="duties">Attends to the overall care of thoroughbred racehorses including feeding, watering, maintenance of stalls and rack, cleaning, brushing, exercising, trimming of horses, disinfecting…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-077810" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Animal Caretakers</h3>
+  <div class="meta">Horse Show Groom · Southern Show Stables, Inc. · Wellington, FL</div>
+  <div class="meta">开工 2026-10-01 · 收工 2027-04-30 · $18.57/小时；See ETA-9142B Supplemental Information</div>
+  <p class="duties">Horse Show Groom: Will be responsible for the care of top show horses including grooming, feeding, watering, bathing, body clipping &amp; supervised turnout. Groom will maintain and cl…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-078475" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Animal Caretakers</h3>
+  <div class="meta">Thoroughbred Racehorse Groom · Ballyerin Racing Inc. · Laurel, MD</div>
+  <div class="meta">开工 2026-10-01 · 收工 2027-07-31 · $18.6/小时</div>
+  <p class="duties">Attends to the overall care of thoroughbred racehorses including feeding, watering, maintenance of stalls and rack, cleaning, brushing, exercising, trimming of horses, disinfecting…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-077598" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Animal Caretakers</h3>
+  <div class="meta">Thoroughbred Racehorse Groom · Wildwood Oaks Farm · Hot Springs, AR</div>
+  <div class="meta">开工 2026-10-01 · 收工 2027-07-31 · $15.17/小时</div>
+  <p class="duties">Attends to the overall care of thoroughbred race horses including feeding, watering, maintenance of stalls and rack, cleaning, brushing, exercising, trimming of horses, disinfectin…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-077618" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Animal Caretakers</h3>
+  <div class="meta">Horse Groom · SRS Farm, Inc. · Ocala, FL</div>
+  <div class="meta">开工 2026-10-01 · 收工 2027-04-30 · $16.29–$20/小时；Bonuses/raises may be paid at employer discretion based on performance, skill, tenure.</div>
+  <p class="duties">Assist with the daily care of horses and preparation of horses for training/show. Feed/water horse, clean tack, bathe, brush, and clip horse, apply horse boots and prepare horse to…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-077920" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Animal Caretakers</h3>
+  <div class="meta">Thoroughbred Racehorse Groom · Cunningham Racing Stables LLC · Shelbyville, IN</div>
+  <div class="meta">开工 2026-10-01 · 收工 2027-07-31 · $15.1/小时</div>
+  <p class="duties">Attends to the overall care of thoroughbred racehorses including feeding, watering, maintenance of stalls and rack, cleaning, brushing, exercising, trimming of horses, disinfecting…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-077723" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Animal Caretakers</h3>
+  <div class="meta">Thoroughbred Racehorse Groom · Jorge Abreu Corp · Boynton Beach, FL</div>
+  <div class="meta">开工 2026-10-01 · 收工 2027-04-30 · $18.57/小时</div>
+  <p class="duties">Attends to the overall care of thoroughbred race horses including feeding, watering, maintenance of stalls and rack, cleaning, brushing, exercising, trimming of horses, disinfectin…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-077740" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Animal Caretakers</h3>
+  <div class="meta">Stable Attendant · Wavertree Stables · Ocala, FL</div>
+  <div class="meta">开工 2026-10-01 · 收工 2027-06-20 · $16.29/小时</div>
+  <p class="duties">Attend to live horses. Duties include feed, water, bathe, exercise, walk and load horses. Clean and maintain stalls. Working split shift. Break area provided.</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26186-079183" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Animal Caretakers</h3>
+  <div class="meta">Barn Foreman · Four Star Sales LLC · Lexington, KY</div>
+  <div class="meta">开工 2026-10-01 · 收工 2027-07-31 · $15.8/小时</div>
+  <p class="duties">Attends to the overall care of thoroughbred racehorses including feeding, watering, maintenance of stalls and rack, cleaning, brushing, exercising, trimming of horses, disinfecting…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-077623" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Animal Caretakers</h3>
+  <div class="meta">STABLE ATTENDANT · KDE EQUINE, LLC DBA STEVE ASMUSSEN RACING STABLE · New Orleans, LA</div>
+  <div class="meta">开工 2026-10-01 · 收工 2027-04-01 · $14.22/小时</div>
+  <p class="duties">Cares for and cleans horses; exercises and inspects them according to instructions.</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26186-078983" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Animal Caretakers</h3>
+  <div class="meta">Show Horse Groom · Lotus Equine LLC · Smiths Grove, KY</div>
+  <div class="meta">开工 2026-10-01 · 收工 2027-04-30 · $13.88/小时</div>
+  <p class="duties">***RFI Response*** Attends to the overall care of Arabian &amp; American Saddlebred show horses including feeding, watering, cleaning, brushing, show clipping of horses, inspection of…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-077730" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Animal Caretakers</h3>
+  <div class="meta">STABLE ATTENDANT · CHRISTOPHE CLEMENT RACING STABLE, INC. · Indiantown, FL</div>
+  <div class="meta">开工 2026-10-01 · 收工 2027-04-01 · $16.07/小时</div>
+  <p class="duties">Cares for and cleans horses; exercises and inspects them according to instructions.</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26186-078999" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Animal Caretakers</h3>
+  <div class="meta">Thoroughbred Horse Groom · Wesley Ward Enterprises LLC · Hallandale, FL</div>
+  <div class="meta">开工 2026-10-01 · 收工 2027-04-30 · $18.57/小时</div>
+  <p class="duties">Attends to the overall care of thoroughbred race horses including feeding, watering, maintenance of stalls and rack, cleaning, brushing, exercising, trimming of horses, disinfectin…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-077634" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Animal Caretakers</h3>
+  <div class="meta">STABLE ATTENDANT · KDE EQUINE, LLC DBA STEVE ASMUSSEN RACING STABLE · Oklahoma City, OK</div>
+  <div class="meta">开工 2026-10-01 · 收工 2027-04-01 · $14.55/小时</div>
+  <p class="duties">Cares for and cleans horses; exercises and inspects them according to instructions.</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26186-078994" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Animal Caretakers</h3>
+  <div class="meta">Thoroughbred Racehorse Groom · Jamie Ness Racing · Laurel, MD</div>
+  <div class="meta">开工 2026-10-01 · 收工 2027-07-31 · $18.6/小时</div>
+  <p class="duties">Attends to the overall care of thoroughbred racehorses including feeding, watering, maintenance of stalls and rack, cleaning, brushing, exercising, trimming of horses, disinfecting…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-077625" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Animal Caretakers</h3>
+  <div class="meta">Horse Groom · Lutz Manfredi Showjumping, LLC · Wellington, FL</div>
+  <div class="meta">开工 2026-10-01 · 收工 2027-05-30 · $18.57/小时；Bonuses/raises may be paid at employer discretion based on performance, skill, tenure.</div>
+  <p class="duties">Provide daily care for International level show jumping horses. Maintain show jumpers in top physical care: brush, poultice, wrap and all general daily care for horses, including b…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-077040" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Animal Caretakers</h3>
+  <div class="meta">Thoroughbred Horse Groom · STALL RACING LLC · NEW ORLEANS, LA</div>
+  <div class="meta">开工 2026-10-01 · 收工 2027-04-30 · $14.22/小时</div>
+  <p class="duties">Attends to the overall care of thoroughbred racehorses including feeding, watering, maintenance of stalls and rack, cleaning, brushing, exercising, trimming of horses, disinfecting…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-077737" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Animal Caretakers</h3>
+  <div class="meta">Horse Show Groom · Round Meadow Farm LLC · Atherton, CA</div>
+  <div class="meta">开工 2026-10-01 · 收工 2027-07-30 · $21.49/小时</div>
+  <p class="duties">Horse Show Groom cares for and maintains show horses for competition. Duties include: inspect horses, exercise, groom, bathe, feed, water, bandage legs, tack up, administer supplem…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-076729" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Animal Caretakers</h3>
+  <div class="meta">Thoroughbred Racehorse Groom · Padinac Inc. · Baltimore, MD</div>
+  <div class="meta">开工 2026-10-01 · 收工 2027-07-31 · $18.46/小时</div>
+  <p class="duties">Attends to the overall care of thoroughbred race horses including feeding, watering, maintenance of stalls and rack, cleaning, brushing, exercising, trimming of horses, disinfectin…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-077678" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Animal Caretakers</h3>
+  <div class="meta">Grand Prix Horse Show Groom · Bargee Farms, Inc. · Allison Park, PA</div>
+  <div class="meta">开工 2026-10-01 · 收工 2027-06-30 · $15.21/小时；See Supplemental Information</div>
+  <p class="duties">Attend to the care of the Grand Prix show horses and will groom, feed, water, bathe, clean, brush and trim horses. Will maintain and disinfect stalls and bedding, inspect and obser…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-078404" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Animal Caretakers</h3>
+  <div class="meta">Thoroughbred Racehorse Groom · Brellanick Stables Inc. · Florence, KY</div>
+  <div class="meta">开工 2026-10-01 · 收工 2027-07-31 · $16.37/小时</div>
+  <p class="duties">Attends to the overall care of thoroughbred race horses including feeding, watering, maintenance of stalls and rack, cleaning, brushing, exercising, trimming of horses, disinfectin…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-077671" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Animal Caretakers</h3>
+  <div class="meta">Stable Attendant · George Weaver Racing Stables, LLC · Delray Beach, FL</div>
+  <div class="meta">开工 2026-10-01 · 收工 2027-04-15 · $18.57/小时；Bonuses/raises may be paid at employer discretion based on performance, skill, tenure.</div>
+  <p class="duties">Daily care of horse/preparation of horses for training/racing. Feed/water horse, clean tack, bathe, brush, and clip horse, apply horse boots and prepare horse to be saddled for rac…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-077018" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Animal Caretakers</h3>
+  <div class="meta">Thoroughbred Racehorse Groom · Danner Racing · Florence, KY</div>
+  <div class="meta">开工 2026-10-01 · 收工 2027-07-31 · $16.37/小时</div>
+  <p class="duties">Attends to the overall care of thoroughbred racehorses including feeding, watering, maintenance of stalls and rack, cleaning, brushing, exercising, trimming of horses, disinfecting…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-077732" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Animal Trainers</h3>
+  <div class="meta">Horse Rider / Stable Attendant · horseOlogy, LLC - Gulfstream · Hallandale, FL</div>
+  <div class="meta">开工 2026-10-01 · 收工 2027-05-30 · $22.43/小时；Bonuses/raises may be paid at employer’s discretion based on performance, skill, and tenure.</div>
+  <p class="duties">Responsible for the daily care, handling, and exercise of horses, including feeding, watering, grooming, bathing, and maintaining clean stalls and equipment. Prepares horses for tr…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-076360" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Assemblers and Fabricators, All Other</h3>
+  <div class="meta">Production Worker Helpers · Lumber Specialties US LBM LLC · Dyersville, IA</div>
+  <div class="meta">开工 2026-10-01 · 收工 2026-12-31 · $21.64/小时；Wage rate may vary based on experience and/or merit. Up to 10 hours of overtime may be available but not guaranteed.</div>
+  <p class="duties">***RFI response*** Move Material from Saw Room to Production Tables Using Carts: Production Worker Helpers transport lumber and wood components from the saw room to designated prod…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-076488" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Baggage Porters and Bellhops</h3>
+  <div class="meta">Bellhop · The Gasparilla Inn &amp; Club · Boca Grande, FL</div>
+  <div class="meta">开工 2026-10-01 · 收工 2027-07-06 · $15.91/小时；Based on merit and past experience with our company. See F.a.11</div>
+  <p class="duties">Bellhops will be responsible for receiving and marking baggage, greeting incoming guests and escorting them to their rooms, transporting guests by golf cart about premises, maintai…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-077833" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Brickmasons and Blockmasons</h3>
+  <div class="meta">Helpers--Stonemasons and Tile Setters · Colorado Outdoor Creations LTD · Longmont, CO</div>
+  <div class="meta">开工 2026-10-01 · 收工 2027-05-31 · $32.37/小时；Raises and/or bonuses may be offered based on individual factors including work performance, skill, and tenure.</div>
+  <p class="duties">Remove snow from sidewalks, driveways, or parking areas, using snowplows, snow blowers, or snow shovels, or spread snow-melting chemicals. Shovel snow. Ice remediation using sand a…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-076610" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Butchers and Meat Cutters</h3>
+  <div class="meta">Butcher · Fitch Ranch Artisan Meat Company LLC · Craig, CO</div>
+  <div class="meta">开工 2026-10-01 · 收工 2027-05-30 · $22.69–$25/小时；Employee may be eligible for additional compensation in the form of a discretionary production bonus and tips.</div>
+  <p class="duties">Butchers will be responsible for artisan meat cutting, processing, and packaging. Will lift and hang animal carcass on meat hanging hooks until ready to cut; breaking down parts of…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-077725" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Cabinetmakers and Bench Carpenters</h3>
+  <div class="meta">Production workers-Helpers · SOUTHERN MILLING &amp; LUMBER INC · Lakeland, FL</div>
+  <div class="meta">开工 2026-10-01 · 收工 2027-07-15 · $22.31/小时</div>
+  <p class="duties">Production Worker Helpers will assist in the construction, repair, and refurbishment of wooden pallets used for the storage and transportation of materials. Workers will perform ma…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-076897" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Cement Masons and Concrete Finishers</h3>
+  <div class="meta">HELPER-CONSTRUCTION TRADES · CLEVELAND CUSTOM CONCRETE &amp; POOLS , LLC. · STRONGSVILLE, OH</div>
+  <div class="meta">开工 2026-10-01 · 收工 2026-12-15 · $30.3/小时；Merit based raises available at employer discretion.</div>
+  <p class="duties">***2nd RFI response*** The worker assists with the placement of reinforcing steel, rebar, and wire mesh used in concrete construction projects. Specific tasks include carrying, unl…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-078402" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Cement Masons and Concrete Finishers</h3>
+  <div class="meta">Concrete Finisher · Aranda Pools, Inc. · Odessa, TX</div>
+  <div class="meta">开工 2026-10-01 · 收工 2026-12-31 · $23.31/小时</div>
+  <p class="duties">Concrete finisher for swimming pools. Will set forms to hold concrete; check that forms are properly constructed to architects specifications; spray concrete from gunite machine in…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-077659" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Cement Masons and Concrete Finishers</h3>
+  <div class="meta">Construction Laborer · Stone Pro Inc. · Menomonie, WI</div>
+  <div class="meta">开工 2026-10-01 · 收工 2026-12-20 · $32.57/小时；Overtime may be available but is not guaranteed. May be offered higher wage rate due to experience/merit.</div>
+  <p class="duties">Tend pumps, compressors, or generators to provide power for tools, machinery, or equipment or to heat or move materials, such as asphalt. Lubricate, clean, or repair machinery, equ…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-077493" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Cement Masons and Concrete Finishers</h3>
+  <div class="meta">Cement Masons &amp; Concrete Finishers · Bayer Crete Inc. · West Middlesex, PA</div>
+  <div class="meta">开工 2026-10-01 · 收工 2026-12-15 · $30.3/小时；Higher pay and/or other incentives based on performance.</div>
+  <p class="duties">Smooth, level, and finish surfaces of freshly poured concrete on construction projects such as foundations, floors, walks, sidewalks, curbs, driveways, roads, curbs, and other conc…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-076240" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Cement Masons and Concrete Finishers</h3>
+  <div class="meta">Concrete Finishers · Genuine Builders, Inc. · Shawnee, OK</div>
+  <div class="meta">开工 2026-10-01 · 收工 2026-12-15 · $21.87/小时</div>
+  <p class="duties">Prepare construction site where concrete will be poured by directing concrete laborers to place materials on job site, measure forms, examine the grade and confirm proper form layo…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-076456" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Cement Masons and Concrete Finishers</h3>
+  <div class="meta">Concrete Finishers · Genuine Builders, Inc. · Harrold, SD</div>
+  <div class="meta">开工 2026-10-01 · 收工 2026-12-15 · $22.18/小时；Wage rate may vary based on experience and/or merit. Up to 10 hours of overtime may be available but are not guaranteed.</div>
+  <p class="duties">Prepare construction site where concrete will be poured by directing concrete laborers to place materials on job site, measure forms, examine the grade and confirm proper form layo…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-076312" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Cement Masons and Concrete Finishers</h3>
+  <div class="meta">Concrete Finishers · Genuine Builders, Inc. · Mohall, ND</div>
+  <div class="meta">开工 2026-10-01 · 收工 2026-12-15 · $27.04/小时；Wage rate may vary based on experience and/or merit. Up to 10 hours of overtime may be available but are not guaranteed.</div>
+  <p class="duties">Prepare construction site where concrete will be poured by directing concrete laborers to place materials on job site, measure forms, examine the grade and confirm proper form layo…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-076427" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Cement Masons and Concrete Finishers</h3>
+  <div class="meta">Winter Concrete Laborer · TCK Concrete, LLC · West Burlington, IA</div>
+  <div class="meta">开工 2026-10-01 · 收工 2026-12-31 · $29.03/小时</div>
+  <p class="duties">A Winter Concrete Laborer supports the construction crew by preparing worksites, setting up and dismantling forms, placing reinforcement materials such as rebar or wire mesh, assis…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26189-087404" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Cement Masons and Concrete Finishers</h3>
+  <div class="meta">Concrete Finishers · Genuine Builders, Inc. · Marathon City, WI</div>
+  <div class="meta">开工 2026-10-01 · 收工 2026-12-15 · $32.13/小时；Wage rate may vary based on experience and/or merit. Up to 10 hours of overtime may be available but are not guaranteed.</div>
+  <p class="duties">Prepare construction site where concrete will be poured by directing concrete laborers to place materials on job site, measure forms, examine the grade and confirm proper form layo…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-076393" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Cement Masons and Concrete Finishers</h3>
+  <div class="meta">Concrete Finishers · Genuine Builders, Inc. · DeWitt, IA</div>
+  <div class="meta">开工 2026-10-01 · 收工 2026-12-15 · $24.59/小时；Wage rate may vary based on experience and/or merit. Up to 10 hours of overtime may be available but are not guaranteed.</div>
+  <p class="duties">Prepare construction site where concrete will be poured by directing concrete laborers to place materials on job site, measure forms, examine the grade and confirm proper form layo…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-076400" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Cement Masons and Concrete Finishers</h3>
+  <div class="meta">Concrete Finishers · Genuine Builders, Inc. · David City, NE</div>
+  <div class="meta">开工 2026-10-01 · 收工 2026-12-15 · $24.08/小时；Wage rate may vary based on experience and/or merit. Up to 10 hours of overtime may be available but are not guaranteed.</div>
+  <p class="duties">Prepare construction site where concrete will be poured by directing concrete laborers to place materials on job site, measure forms, examine the grade and confirm proper form layo…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-076138" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Cement Masons and Concrete Finishers</h3>
+  <div class="meta">Concrete Laborer/Finisher · R&amp;L Construction LLC · Tulsa, OK</div>
+  <div class="meta">开工 2026-10-01 · 收工 2026-12-31 · $22.66/小时</div>
+  <p class="duties">Cleaning and preparing construction sites, loading and unloading materials, pouring and finishing concrete, building forms and assisting skilled trades people in their duties. Need…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-077600" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Cement Masons and Concrete Finishers</h3>
+  <div class="meta">Construction Laborer · RG Hot Shot LLC · Houston, TX</div>
+  <div class="meta">开工 2026-10-01 · 收工 2026-12-31 · $22.95/小时</div>
+  <p class="duties">Tidying up work areas, unloading materials, preparing worksites for skilled tradespeople to do skilled labor (i.e., will organize tools, lay down tarps, set up ladders), handing to…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-077601" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Cement Masons and Concrete Finishers</h3>
+  <div class="meta">Construction laborer · North Star Pools LLC · Gilbert, AZ</div>
+  <div class="meta">开工 2026-10-01 · 收工 2026-11-15 · $28.07/小时</div>
+  <p class="duties">Construction laborers will be performing manual and physical duties, use hand and electrical tools and clean or prepare construction sites to eliminate possible hazards to build sw…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-076775" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Childcare Workers</h3>
+  <div class="meta">Child Care Worker · Little Believer’s Academy Inc. · Clayton, NC</div>
+  <div class="meta">开工 2026-10-01 · 收工 2027-05-31 · $14.27/小时；Raises and/or bonuses may be offered based on individual factors including work performance, skill, and tenure.</div>
+  <p class="duties">As included on the ONET website for 39-9011.00 (Child Care Workers), the Child Care Workers are to perform a variety of tasks/duties on behalf of the infant/children within their a…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-076160" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Childcare Workers</h3>
+  <div class="meta">Childcare Worker · J4K Preschool Murrieta, Inc · Murrieta, CA</div>
+  <div class="meta">开工 2026-10-01 · 收工 2027-05-28 · $19.22/小时；Raises and/or bonuses may be offered based on individual factors including work performance, skill, and tenure</div>
+  <p class="duties">Assist the Lead Teacher in implementing daily lessons and structured learning activities aligned with the California Preschool Learning Foundations and Just 4 Kids Preschool’s CCTR…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-075969" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+<article class="job">
+  <h3><span class="tag b">H-2B</span>Childcare Workers</h3>
+  <div class="meta">Child Care Development Specialist · Ruby&#x27;s Academy · Mount Pleasant, SC</div>
+  <div class="meta">开工 2026-10-01 · 收工 2027-06-04 · $15.52/小时；Raises and/or bonuses may be offered based on individual factors including work performance, skill, and tenure.</div>
+  <p class="duties">Provide daily care for preschool aged children in an early childhood development program. Speak and read to children. Monitor children for health, behavioral, and emotional issues…</p>
+  <div class="contact"><a href="https://seasonaljobs.dol.gov/jobs/H-400-26184-075916" target="_blank" rel="noopener">看劳工部原文</a></div>
+</article>
+  </main>
+
+  <footer>
+    <p>本站使用美国劳工部 SeasonalJobs 公开数据，但未经劳工部认可或认证。请到原文页联系雇主：<a href="https://seasonaljobs.dol.gov/">seasonaljobs.dol.gov</a>。</p>
+    <p>本站不代招、不收费、不保证签证。中国籍申请人能否获签，由使领馆决定。</p>
+  </footer>
+</body>
+</html>

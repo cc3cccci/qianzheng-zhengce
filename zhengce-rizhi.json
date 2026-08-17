@@ -1,0 +1,34 @@
+{
+  "updated": "2026-08-17",
+  "entries": [
+    {
+      "logged": "2026-08-17",
+      "country": "美国",
+      "title": "I-539、I-765 换新版，旧表当天拒收",
+      "what": "USCIS 将于 2026-09-15 发布 I-539、I-765 新版（版本日期 09/15/26）。没有宽限期：当天及之后只收新版，旧版拒收。改表是为了对齐「F、J、I 固定停留期 + 延期」终局规则。",
+      "effective": "2026-09-15",
+      "announced": "2026-08-14",
+      "source": "https://www.uscis.gov/newsroom/alerts/uscis-to-publish-new-editions-of-form-i-539-and-form-i-765-older-editions-will-be-rejected-starting",
+      "source_label": "USCIS 警示",
+      "affects": "站点 F-1 / J-1 仍写入境常标 D/S，可能已过时。",
+      "site_pages": [
+        "qianzheng#f1",
+        "qianzheng#j1"
+      ]
+    },
+    {
+      "logged": "2026-08-17",
+      "country": "美国",
+      "title": "2027 财年 H-1B 名额已满",
+      "what": "USCIS 宣布已收到足够请愿，2027 财年常规 65,000 名额和硕士豁免 20,000 名额均已满。",
+      "effective": "2026-07-17",
+      "announced": "2026-07-17",
+      "source": "https://www.uscis.gov/newsroom/alerts",
+      "source_label": "USCIS Alerts",
+      "affects": "H-1B 页「多数要抽签」仍成立；本财年新请愿窗口已关。",
+      "site_pages": [
+        "qianzheng#h1b"
+      ]
+    }
+  ]
+}
