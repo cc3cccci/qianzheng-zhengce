@@ -1,0 +1,8 @@
+{
+  "countries": [
+    {"id": "us", "slug": "meiguo", "name": "美国", "status": "ready", "checked": "2026-08-17", "blurb": "中国护照没有免签。工作签几乎都要对方先递。"},
+    {"id": "ca", "slug": "jianada", "name": "加拿大", "status": "placeholder", "checked": null, "blurb": "现有政策待补。"},
+    {"id": "uk", "slug": "yingguo", "name": "英国", "status": "placeholder", "checked": null, "blurb": "现有政策待补。"},
+    {"id": "au", "slug": "aodaliya", "name": "澳大利亚", "status": "placeholder", "checked": null, "blurb": "现有政策待补。"}
+  ]
+}

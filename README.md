@@ -20,7 +20,15 @@ python3 -m http.server 8080
 
 打开 http://127.0.0.1:8080
 
-季节工页是 `h2.html`（地址 `/h2`）。政策变更轨迹是 `gengxin.html`（地址 `/gengxin`），数据在 `zhengce-rizhi.json`。
+国家目录是首页。美国页是 `meiguo.html`（地址 `/meiguo`），加拿大 / 英国 / 澳大利亚是空壳页。签证种类说明是 `qianzheng.html`（`/qianzheng`），季节工页是 `h2.html`（`/h2`）。
+
+政策变更轨迹是 `gengxin.html`（`/gengxin`）。国家名单在 `countries.json`，变更日志在 `zhengce-rizhi.json`。记下一条后跑：
+
+```bash
+python3 build_gengxin.py
+```
+
+首页最近变更、各国变更列表和 `/gengxin` 都由这一份日志生成。
 
 ## 更新 H-2 数据
 

@@ -339,6 +339,47 @@
       font-weight: 600;
     }
     .backline { margin: 0 0 14px; }
+    .crumbs { color: var(--muted); font-size: .9rem; margin: 0 0 12px; }
+    .crumbs a { text-decoration: none; }
+    .nav-drop { position: relative; }
+    .nav-drop > summary {
+      min-height: 44px; display: inline-flex; align-items: center; padding: 0 10px;
+      border-radius: 8px; color: var(--a); font-size: .95rem;
+      list-style: none; cursor: pointer; font: inherit;
+    }
+    .nav-drop > summary::-webkit-details-marker { display: none; }
+    .nav-drop[open] > summary { background: #eef6f2; }
+    .nav-drop-list {
+      position: absolute; left: 0; top: 100%; z-index: 5;
+      min-width: 10rem; padding: 6px; margin: 0;
+      background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(31, 27, 22, .08);
+    }
+    .nav-drop-list a {
+      display: flex; min-height: 44px; align-items: center; padding: 0 12px;
+      border-radius: 8px; text-decoration: none; color: var(--a);
+    }
+    .applied {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px;
+      margin: 0 0 12px; padding: 10px 12px;
+      background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    }
+    .applied p { margin: 0; color: var(--muted); font-size: .92rem; flex: 1 1 12rem; }
+    .applied button {
+      font: inherit; min-height: 44px; padding: 8px 14px; border-radius: 999px;
+      border: 1px solid var(--line); background: #fff; color: var(--a);
+      cursor: pointer;
+    }
+    .mapbox.preview {
+      border-color: var(--a);
+    }
+    .mapbox.preview .map-cap { color: var(--a); }
+    .mapbox.filtering {
+      background: #eef6f2;
+      border-color: var(--a);
+      box-shadow: 0 0 0 2px rgba(31, 92, 69, .18);
+    }
+    .mapbox.filtering .map-cap { color: var(--a); font-weight: 600; }
   </style>
 </head>
 <body>
@@ -346,18 +387,27 @@
     <div class="topnav-inner">
       <a class="nav-brand" href="/">签证政策</a>
       <div class="nav-links">
-        <a href="/">签证种类</a>
-        <span class="here">查季节工</span>
+        <details class="nav-drop">
+          <summary>国家</summary>
+          <div class="nav-drop-list">
+            <a href="/#guojia">国家目录</a>
+            <a href="/meiguo">美国</a>
+            <a href="/jianada">加拿大</a>
+            <a href="/yingguo">英国</a>
+            <a href="/aodaliya">澳大利亚</a>
+          </div>
+        </details>
         <a href="/gengxin">政策更新</a>
       </div>
     </div>
   </nav>
   <div class="wrap">
     <header>
-      <p class="brand">H-2 查阅</p>
+      <p class="crumbs"><a href="/">签证政策</a> / <a href="/meiguo">美国</a> / 查季节工</p>
+      <p class="brand">签证政策</p>
       <h1>想去美国干几个月？</h1>
       <p class="sub">这些是美国雇主公开招的季节工。办的是工作签，不是旅游签。不收费，也不代办。</p>
-      <p class="backline"><a href="/">先看懂签证种类 →</a></p>
+      <p class="backline"><a href="/meiguo">回美国现有政策 →</a> · <a href="/qianzheng">看签证种类说明 →</a></p>
       <div class="banner">有人收介绍费、办签费、名额费，都是违法的。</div>
     </header>
 
@@ -410,13 +460,13 @@
 
       <div class="controls">
         <input type="search" id="q" placeholder="搜厨师、佛州、雇主…" autocomplete="off" enterkeyhint="search">
-        <button type="button" class="go" id="more">换一批</button>
+        <button type="button" class="go" id="more">再看 8 条</button>
       </div>
 
       <section class="mapbox" id="mapbox">
         <div class="map-cap-row">
-          <p class="map-cap" id="map-cap">点下面一份工，看它在美国哪一带</p>
-          <button type="button" class="map-all" id="map-all" hidden>看全部</button>
+          <p class="map-cap" id="map-cap">点下面一份工，看它在哪一州。点州则只看该州。</p>
+          <button type="button" class="map-all" id="map-all" hidden>取消州筛选</button>
         </div>
         <div class="map-wrap" id="map-wrap">
           <!-- Wikimedia Blank US Map (states only), CC0, Heitordp -->
@@ -480,6 +530,10 @@
 
       <section class="results" aria-live="polite">
         <h2>按你的情况，先看这几份</h2>
+        <div class="applied" id="applied">
+          <p id="applied-text">已按：两个月后可走 · 未限工种 · 未限地区</p>
+          <button type="button" id="clear-filters">清除条件</button>
+        </div>
         <p class="count" id="count">正在对照公开岗位…</p>
         <div id="list">
           <article class="job" data-state="FL" data-id="H-400-26184-076526">
@@ -632,7 +686,11 @@
     var ALL = [];
     var OFFSET = 0;
     var STATE = { what: "any", when: "oct", where: "any", skills: {}, mapState: "" };
-    var MAP_CAP_DEFAULT = "点下面一份工，看它在美国哪一带";
+    var MAP_CAP_DEFAULT = "点下面一份工，看它在哪一州。点州则只看该州。";
+    var WHAT_LABEL = { any: "未限工种", kitchen: "厨房餐厅", hotel: "酒店客房", farm: "农场户外", equip: "开农机修车", land: "园林" };
+    var WHEN_LABEL = { oct: "两个月后可走", nov: "冬天再走", asap: "越早越好", unsure: "未限出发时间" };
+    var WHERE_LABEL = { any: "未限地区", warm: "冬天暖和", west: "西海岸", ne: "东北", mw: "中西部", cold: "不怕冷" };
+    var SKILL_LABEL = { english: "能用英语聊聊", license: "有驾照", cook: "做过厨或餐厅", mechanic: "修过车或开过农机" };
 
     var STATE_ZH = {
       AL: "阿拉巴马", AK: "阿拉斯加", AZ: "亚利桑那", AR: "阿肯色", CA: "加州",
@@ -773,7 +831,37 @@
     function whenMin(when) {
       if (when === "nov") return "2026-11-01";
       if (when === "asap") return TODAY;
+      if (when === "unsure") return "";
       return "2026-10-01";
+    }
+
+    function setMapMode(mode) {
+      var box = $("mapbox");
+      if (!box) return;
+      box.classList.remove("preview");
+      box.classList.remove("filtering");
+      if (mode) box.classList.add(mode);
+    }
+
+    function appliedLine() {
+      var bits = [
+        WHEN_LABEL[STATE.when] || "未限出发时间",
+        WHAT_LABEL[STATE.what] || "未限工种",
+        WHERE_LABEL[STATE.where] || "未限地区"
+      ];
+      var skills = Object.keys(STATE.skills || {});
+      for (var i = 0; i < skills.length; i++) {
+        if (SKILL_LABEL[skills[i]]) bits.push(SKILL_LABEL[skills[i]]);
+      }
+      if (STATE.mapState) bits.push("只看" + (STATE_ZH[STATE.mapState] || STATE.mapState));
+      var q = $("q") ? $("q").value.trim() : "";
+      if (q) bits.push("含「" + q + "」");
+      return "已按：" + bits.join(" · ");
+    }
+
+    function paintApplied() {
+      var el = $("applied-text");
+      if (el) el.textContent = appliedLine();
     }
 
     function cleanWage(w) {
@@ -835,10 +923,12 @@
       var cap = $("map-cap");
       if (cap) cap.textContent = MAP_CAP_DEFAULT;
       setMapAllVisible(false);
+      setMapMode("");
     }
 
     function selectJob(article) {
       if (!article) return;
+      if (STATE.mapState) return;
       var jobs = document.querySelectorAll("#list .job");
       for (var i = 0; i < jobs.length; i++) jobs[i].classList.remove("on");
       article.classList.add("on");
@@ -847,8 +937,9 @@
       var cap = $("map-cap");
       if (cap) {
         var line = article.querySelector(".line");
-        cap.textContent = line ? line.textContent : stateCaption(code);
+        cap.textContent = "这份工在：" + (line ? line.textContent : stateCaption(code));
       }
+      setMapMode("preview");
       var box = $("mapbox");
       if (box && box.getBoundingClientRect().top < 0) {
         try { box.scrollIntoView({ block: "nearest" }); }
@@ -868,8 +959,9 @@
       STATE.mapState = code;
       highlightMap(code);
       var cap = $("map-cap");
-      if (cap) cap.textContent = stateCaption(code);
+      if (cap) cap.textContent = "已筛这一州：" + stateCaption(code);
       setMapAllVisible(true);
+      setMapMode("filtering");
       OFFSET = 0;
       render();
     }
@@ -971,7 +1063,7 @@
         if (!j.start) continue;
         var dur = durationMonths(j.start, j.end);
         if (dur == null || dur > 14) continue;
-        if (j.start < minStart) continue;
+        if (minStart && j.start < minStart) continue;
         if (STATE.what !== "any" && !matchesCat(j, STATE.what)) continue;
         if (STATE.where !== "any") {
           var meta = STATE_META[j.state];
@@ -1015,6 +1107,7 @@
       if (!ALL.length) return;
       var rows = filtered();
       var n = rows.length;
+      paintApplied();
       $("count").textContent = n ? ("从 " + n + " 份公开岗位里挑的") : "";
       if (!n) {
         $("list").innerHTML = '<p class="empty">按这个条件没剩几份。换个想干的，换个地方，或改成「两个月后」。</p>';
@@ -1028,6 +1121,7 @@
       for (var k = 0; k < slice.length; k++) html += cardHtml(slice[k]);
       $("list").innerHTML = html;
       if (STATE.mapState) {
+        setMapMode("filtering");
         highlightMap(STATE.mapState);
         var cards = $("list").querySelectorAll(".job");
         var marked = false;
@@ -1039,6 +1133,44 @@
           }
         }
       }
+    }
+
+    function clearFilters() {
+      STATE.what = "any";
+      STATE.when = "unsure";
+      STATE.where = "any";
+      STATE.skills = {};
+      if ($("q")) $("q").value = "";
+      var groups = [
+        { id: "what-chips", v: "any" },
+        { id: "when-chips", v: "unsure" },
+        { id: "where-chips", v: "any" }
+      ];
+      for (var g = 0; g < groups.length; g++) {
+        var box = $(groups[g].id);
+        if (!box) continue;
+        var chips = box.querySelectorAll(".chip");
+        for (var i = 0; i < chips.length; i++) {
+          var on = chips[i].getAttribute("data-v") === groups[g].v;
+          if (on) chips[i].classList.add("on");
+          else chips[i].classList.remove("on");
+          chips[i].setAttribute("aria-pressed", on ? "true" : "false");
+        }
+      }
+      var skillBox = $("skill-chips");
+      if (skillBox) {
+        var sk = skillBox.querySelectorAll(".chip");
+        for (var s = 0; s < sk.length; s++) {
+          sk[s].classList.remove("on");
+          sk[s].setAttribute("aria-pressed", "false");
+        }
+      }
+      $("asap-note").hidden = true;
+      var note = $("where-note");
+      if (note) { note.textContent = ""; note.hidden = true; }
+      clearMapFilter();
+      OFFSET = 0;
+      render();
     }
 
     function fallbackCopy(text) {
@@ -1153,6 +1285,10 @@
     $("more").addEventListener("click", function () {
       OFFSET += PAGE;
       render();
+    });
+
+    $("clear-filters").addEventListener("click", function () {
+      clearFilters();
     });
 
     $("q").addEventListener("input", function () {
