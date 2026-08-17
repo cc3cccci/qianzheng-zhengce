@@ -380,7 +380,11 @@
       box-shadow: 0 0 0 2px rgba(31, 92, 69, .18);
     }
     .mapbox.filtering .map-cap { color: var(--a); font-weight: 600; }
+    @media (min-width: 900px) {
+      .wrap, .topnav-inner { max-width: 70rem; }
+    }
   </style>
+  <link rel="stylesheet" href="/layout.css">
 </head>
 <body>
   <nav class="topnav" aria-label="站点导航">
@@ -463,6 +467,7 @@
         <button type="button" class="go" id="more">再看 8 条</button>
       </div>
 
+      <div class="h2-desk">
       <section class="mapbox" id="mapbox">
         <div class="map-cap-row">
           <p class="map-cap" id="map-cap">点下面一份工，看它在哪一州。点州则只看该州。</p>
@@ -649,6 +654,7 @@
           </article>
         </div>
       </section>
+      </div>
 
       <section class="faq">
         <h2>先把这几件事问清楚</h2>

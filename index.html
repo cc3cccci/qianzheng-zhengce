@@ -116,7 +116,11 @@
     footer { padding: 0 0 40px; color: var(--muted); font-size: .88rem; }
     footer p { margin: 0 0 8px; }
     footer a { word-break: break-all; }
+    @media (min-width: 900px) {
+      .wrap, .topnav-inner { max-width: 70rem; }
+    }
   </style>
+  <link rel="stylesheet" href="/layout.css">
 </head>
 <body>
   <nav class="topnav" aria-label="站点导航">

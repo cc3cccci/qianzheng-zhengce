@@ -203,7 +203,10 @@ SHARED_CSS = """
     footer { padding: 0 0 40px; color: var(--muted); font-size: .88rem; }
     footer p { margin: 0 0 8px; }
     footer a { word-break: break-all; }
-"""
+    @media (min-width: 900px) {
+      .wrap, .topnav-inner { max-width: 70rem; }
+    }
+""" + (ROOT / "layout.css").read_text(encoding="utf-8")
 
 
 def esc(s) -> str:
@@ -464,6 +467,7 @@ def write_gengxin(log: dict, countries: list[dict], cmap: dict[str, dict]) -> No
   <meta property="og:url" content="%s/gengxin">
   <style>%s
   </style>
+  <link rel="stylesheet" href="/layout.css">
 </head>
 <body>
 %s
@@ -562,6 +566,7 @@ def write_placeholder(c: dict, countries: list[dict], entries: list[dict], cmap:
   <meta property="og:url" content="%s/%s">
   <style>%s
   </style>
+  <link rel="stylesheet" href="/layout.css">
 </head>
 <body>
 %s
@@ -577,6 +582,7 @@ def write_placeholder(c: dict, countries: list[dict], entries: list[dict], cmap:
       </nav>
     </header>
     <main>
+      <div class="country-split">
       <section class="block" id="xianyou">
         <h2>现有政策</h2>
         <p class="note">现有政策待补。对照官网的路径卡之后会放在这里，大约 3–6 条。</p>
@@ -591,6 +597,7 @@ def write_placeholder(c: dict, countries: list[dict], entries: list[dict], cmap:
         %s
         <p><a href="/gengxin?country=%s">在更新记录里只看%s</a></p>
       </section>
+      </div>
     </main>
     <footer>
       <p>非官方。现有政策待补。已记下的变更以官网原文为准。不收费，不代办。</p>

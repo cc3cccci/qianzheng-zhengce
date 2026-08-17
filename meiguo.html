@@ -178,7 +178,11 @@
     footer { padding: 0 0 40px; color: var(--muted); font-size: .88rem; }
     footer p { margin: 0 0 8px; }
     footer a { word-break: break-all; }
+    @media (min-width: 900px) {
+      .wrap, .topnav-inner { max-width: 70rem; }
+    }
   </style>
+  <link rel="stylesheet" href="/layout.css">
 </head>
 <body>
   <nav class="topnav" aria-label="站点导航">
@@ -219,6 +223,7 @@
     </header>
 
     <main>
+      <div class="country-split">
       <section class="block" id="xianyou">
         <h2>现有政策</h2>
         <section class="q" aria-labelledby="q-goal">
@@ -367,6 +372,7 @@
       <!--/gengxin:country-->
         <p><a class="go" href="/gengxin?country=us">在更新记录里只看美国 →</a></p>
       </section>
+      </div>
 
       <section class="faq">
         <h2>先把这几件事问清楚</h2>
