@@ -10,6 +10,8 @@
 
 线上：https://h2-chaxun.pages.dev
 
+信息架构与交互方案见 [架构方案.md](架构方案.md)。
+
 ## 本地预览
 
 ```bash
