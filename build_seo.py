@@ -38,13 +38,13 @@ CSS = """
       background: var(--bg);
     }
     header, main, footer, .banner, .crumbs, .subnav {
-      max-width: 920px;
+      max-width: 42rem;
       margin-left: auto;
       margin-right: auto;
     }
     .topnav { border-bottom: 1px solid var(--line); background: var(--bg); }
     .topnav-inner {
-      max-width: 920px; margin: 0 auto; padding: 4px 20px;
+      max-width: 42rem; margin: 0 auto; padding: 4px 20px;
       display: flex; flex-wrap: wrap; align-items: center; gap: 4px 18px;
     }
     .nav-brand {
@@ -115,6 +115,11 @@ CSS = """
       margin: 2px 0 0;
       color: var(--muted);
       font-size: .95rem;
+    }
+    @media (min-width: 900px) {
+      header, main, footer, .banner, .crumbs, .subnav, .topnav-inner {
+        max-width: 70rem;
+      }
     }
 """
 

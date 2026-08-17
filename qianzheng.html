@@ -219,8 +219,11 @@
       color: var(--warn); border-radius: 10px; font-size: .9rem;
     }
     .change-bar a { color: var(--warn); font-weight: 600; }
-
+    @media (min-width: 900px) {
+      .wrap, .topnav-inner { max-width: 70rem; }
+    }
   </style>
+  <link rel="stylesheet" href="/layout.css">
 </head>
 <body>
   <nav class="topnav" aria-label="站点导航">
