@@ -1,6 +1,20 @@
 {
-  "updated": "2026-08-17",
+  "updated": "2026-08-19",
   "entries": [
+    {
+      "logged": "2026-08-19",
+      "country": "us",
+      "title": "公共负担审查新手册，9月18日起用",
+      "what": "USCIS 更新政策手册，说明如何判断申请调整身份（I-485）的人是否可能成为公共负担。配合 2026-07-20 公布、2026-09-18 生效的终局规则（废止 2022 年规定）。9月18日及之后递交的 I-485，审查会看各类需经家庭经济调查的公共福利；此前只看现金援助和政府出资的长期机构安置。",
+      "effective": "2026-09-18",
+      "announced": "2026-08-18",
+      "source": "https://www.uscis.gov/newsroom/alerts/uscis-issues-guidance-on-making-public-charge-inadmissibility-determination",
+      "source_label": "USCIS 警示",
+      "affects": "主要影响绿卡调整身份，不改 B/F/J/H-2/H-1B 短期停留说明。站点 EB 页如写公共负担口径需核对。",
+      "site_pages": [
+        "qianzheng#eb"
+      ]
+    },
     {
       "logged": "2026-08-17",
       "country": "us",
