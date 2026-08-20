@@ -1,6 +1,20 @@
 {
-  "updated": "2026-08-19",
+  "updated": "2026-08-20",
   "entries": [
+    {
+      "logged": "2026-08-20",
+      "country": "us",
+      "title": "I-485 换新版，9月18日起旧表拒收",
+      "what": "USCIS 将于 2026-09-18 发布 I-485 新版（版本日期 09/18/26），对齐公共负担终局规则。没有宽限期：当天及之后只收新版，旧版（01/20/25）拒收。9月18日前仍可用旧版。",
+      "effective": "2026-09-18",
+      "announced": "2026-08-19",
+      "source": "https://www.uscis.gov/newsroom/alerts/uscis-to-publish-new-edition-of-form-i-485-older-editions-will-be-rejected-starting-sept-18",
+      "source_label": "USCIS 警示",
+      "affects": "主要影响绿卡调整身份表格，不改 B/F/J/H-2/H-1B 短期停留说明。可与已记的公共负担手册条目对照。",
+      "site_pages": [
+        "qianzheng#eb"
+      ]
+    },
     {
       "logged": "2026-08-19",
       "country": "us",
