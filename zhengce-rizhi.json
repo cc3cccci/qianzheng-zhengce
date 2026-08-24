@@ -1,6 +1,20 @@
 {
-  "updated": "2026-08-20",
+  "updated": "2026-08-24",
   "entries": [
+    {
+      "logged": "2026-08-24",
+      "country": "us",
+      "title": "2026年9月签证排期表已公布",
+      "what": "美国国务院发布 2026 年 9 月签证排期表（Visa Bulletin Number 18, Volume XI）。职业移民里，印度 EB-2 和 EB-5 非保留类别为 Unavailable。国务院提醒本财年结束前（9月30日），印度 EB-1、EB-2、以及 EB-5 非保留可能倒退或关停。递交 I-485 用哪张表以 USCIS visabulletininfo 为准；扫描时该页仍写 8 月图表，9 月尚未指定。",
+      "effective": "2026-09-01",
+      "announced": "",
+      "source": "https://travel.state.gov/content/travel/en/legal/visa-law0/visa-bulletin/2026/visa-bulletin-for-september-2026.html",
+      "source_label": "国务院签证排期表",
+      "affects": "站点没有单独排期表页。不改 B/F/J/H-2 短期停留说明。EB 绿卡页如写排期口径需对照 9 月表。",
+      "site_pages": [
+        "qianzheng#eb"
+      ]
+    },
     {
       "logged": "2026-08-20",
       "country": "us",
