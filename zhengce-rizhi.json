@@ -1,6 +1,20 @@
 {
-  "updated": "2026-08-24",
+  "updated": "2026-08-25",
   "entries": [
+    {
+      "logged": "2026-08-25",
+      "country": "us",
+      "title": "USCIS 指定 9 月 I-485 用哪张排期表",
+      "what": "USCIS 已指定 2026 年 9 月调整身份（I-485）用表：亲属类用 Dates for Filing，职业类用 Final Action Dates。页面最近更新 2026-08-24。与已记的 9 月签证排期表对照使用。",
+      "effective": "2026-09-01",
+      "announced": "2026-08-24",
+      "source": "https://www.uscis.gov/visabulletininfo",
+      "source_label": "USCIS 排期用表说明",
+      "affects": "主要影响绿卡调整身份何时可递交 I-485。不改 B/F/J/H-2 短期停留说明。站点没有单独排期表页。",
+      "site_pages": [
+        "qianzheng#eb"
+      ]
+    },
     {
       "logged": "2026-08-24",
       "country": "us",
