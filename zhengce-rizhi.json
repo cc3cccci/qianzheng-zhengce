@@ -1,6 +1,18 @@
 {
-  "updated": "2026-09-01",
+  "updated": "2026-09-02",
   "entries": [
+    {
+      "logged": "2026-09-02",
+      "country": "au",
+      "title": "子女签证申请表格与递交地址更新",
+      "what": "澳大利亚联邦立法登记册公布 Migration (Arrangements for Child Visa Applications) Instrument 2026（LIN 26/081，F2026L01149）。按条例 2.07(5) 规定子女移民类 AH（1108）、子女居留类 BT（1108A）和 Extended Eligibility 临时类 TK（1211）的批准表格、递交方式与地点：表格 47CH / 918；可邮寄至 GPO Box 241, Port Melbourne VIC 3008，或快递至 Child and Other Family Processing Centre, Wellington Central, 836 Wellington St, West Perth WA 6005。废止旧令 Arrangements for Child Visa Applications 2016/051（IMMI 16/051）。已按旧地址收到的申请仍有效。注册日 2026-09-01，文本写明注册次日生效。",
+      "effective": "2026-09-02",
+      "announced": "2026-09-01",
+      "source": "https://www.legislation.gov.au/F2026L01149/asmade/details",
+      "source_label": "联邦立法登记册",
+      "affects": "只改子女/家庭类签证的递交表格与地址，不改访客/WHM 等短期停留说明。澳大利亚页仍是占位，没有写子女签证。",
+      "site_pages": []
+    },
     {
       "logged": "2026-09-01",
       "country": "us",
