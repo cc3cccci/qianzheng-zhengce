@@ -1,6 +1,18 @@
 {
-  "updated": "2026-09-02",
+  "updated": "2026-09-04",
   "entries": [
+    {
+      "logged": "2026-09-04",
+      "country": "uk",
+      "title": "移民规则修订 HC 584：访客/学生配合 Erasmus+ 等",
+      "what": "内政部 2026-09-03 向议会提交 Statement of Changes HC 584（取代此前最新的 HC 259）。多数修订自 2026-10-08 起生效（此前已递交的申请仍按 10 月 7 日规则审）。为配合英国拟于 2027 年重返 Erasmus+：访客可开展 Erasmus+ 培训/课程/不超过 30 天的 traineeship、job shadowing、体育教练等；可在公立学校/学院做不超过 6 个月的 Erasmus+ 短期学习；所有访客可参加工作坊、辩论、技能竞赛；培训不再要求「本国无法获得」；艺人可参加排练。学生/儿童学生：Erasmus+ 课程可不要求获批学历、可低至 RQF2/SCQF5，实习比例与试用期担保人限制对 Erasmus+ 放宽，公立学校学习在 Erasmus+ 担保下允许。GAE 新增 Erasmus+ 计划（IRARA Services Ltd，工作体验最长 12 个月），删除 Ofgem 国际员工交流。学生生活费年度上调（ST 12.3/12.4）：伦敦月 £1529→£1570，伦敦外 £1171→£1203，住宿抵扣上限同步，自 2026-11-30 生效。宗教类：T2 Minister of Religion 与 Temporary Work – Religious Worker 自 2026-10-29 调整（后者用隶属关系取代本地招聘广告等）。另有适格性、Skilled Worker 现代奴役受害者、家庭遣返人权主张、VDA 成年子女、EUSS/BN(O) 等修订；EUSS 取消用 BRP 作身份证明自 2026-12-09 生效。",
+      "effective": "2026-10-08",
+      "announced": "2026-09-03",
+      "source": "https://www.gov.uk/government/publications/statement-of-changes-to-the-immigration-rules-hc-584-3-september-2026",
+      "source_label": "GOV.UK Immigration Rules",
+      "affects": "访客活动与学生生活费会写进英国页时需要对照；英国页目前仍是占位，没有写访客细则或学生生活费。不改美加澳短期停留说明。",
+      "site_pages": []
+    },
     {
       "logged": "2026-09-02",
       "country": "au",
