@@ -1,6 +1,30 @@
 {
-  "updated": "2026-09-04",
+  "updated": "2026-09-07",
   "entries": [
+    {
+      "logged": "2026-09-07",
+      "country": "us",
+      "title": "外国政府雇员在美所生子女可登记为永居",
+      "what": "国土安全部发布临时最终规则：修订现有仅覆盖外交官子女的规定，把「外国外交官」改为更广的「外国政府雇员」，使父母均非美国公民、且至少一方在子女出生时为外国政府雇员的在美出生子女，可登记为合法永久居民（LPR）。「外国政府雇员」包括获美国认证的外交官、外国使领馆本国籍雇员、以外国政府官方身份受雇者，以及享有国际组织豁免的国际组织雇员；不包括私人侍从/随员、部分国企雇员、第三国国民、部分承包商，以及以私人身份访美的外国政府雇员。同步更新 I-485（及相关说明）与 G-325R。规则自 2026-09-04 生效，仅适用于该日及之后出生的子女。因 Casa Inc. v. Trump（D. Md.）初步禁令，DHS 表示不会对认证集体成员采取与禁令冲突的实施行动，除非获得进一步救济。联邦公报公开查阅页显示正式刊发排在 2026-09-09（文件号 2026-18345）。",
+      "effective": "2026-09-04",
+      "announced": "2026-09-04",
+      "source": "https://www.uscis.gov/newsroom/alerts/dhs-announces-rule-for-certain-children-born-in-the-united-states-to-foreign-government-employees",
+      "source_label": "USCIS 警示",
+      "affects": "只影响外国政府雇员在美所生子女的公民身份/永居登记路径，不改 B/F/J/H-2 短期停留说明。站点没有入籍或出生公民页。",
+      "site_pages": []
+    },
+    {
+      "logged": "2026-09-07",
+      "country": "us",
+      "title": "法院暂时撤销抽签移民绿卡冻结备忘录",
+      "what": "USCIS 发布警示：北加州联邦地区法院 2026-08-28 在 Medani 等诉 Trump 等案（26-cv-6332）中暂时撤销政策备忘录 PM-602-0193，待后续诉讼。法院责令 USCIS「在可行且善意的范围内，采取一切合理步骤，在本财年抽签移民剩余时间内恢复对原告待审调整身份申请的正常审理，且不得再适用」该备忘录。法院部分批准集体认证；对 USCIS 的子集体为「受 PM-602-0193 抽签移民冻结影响的 FY-2026 抽签移民中签者及其随行受益人」。USCIS 表示虽不同意，但会遵守，待后续司法审查。官网未另写未来生效日。",
+      "effective": "",
+      "announced": "2026-09-04",
+      "source": "https://www.uscis.gov/newsroom/alerts/court-order-on-diversity-immigrant-visa-program-hold-policy",
+      "source_label": "USCIS 警示",
+      "affects": "主要影响 FY-2026 抽签移民（DV）在美调整身份被冻结的中签者，不改 B/F/J/H-2 短期停留说明。站点没有抽签移民页。",
+      "site_pages": []
+    },
     {
       "logged": "2026-09-04",
       "country": "uk",
