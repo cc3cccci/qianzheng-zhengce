@@ -1,6 +1,18 @@
 {
-  "updated": "2026-09-07",
+  "updated": "2026-09-10",
   "entries": [
+    {
+      "logged": "2026-09-10",
+      "country": "us",
+      "title": "政策手册：外国政府雇员子女永居登记指引",
+      "what": "USCIS 发布政策警示 PA-2026-12（2026-09-09）：更新政策手册，落实 2026-09-04 临时最终规则，说明外国政府雇员在美所生、父母均非美国公民的子女可自愿登记为合法永久居民；并界定「外国政府雇员」等用语。指引立即生效，适用于该规则公布日（2026-09-04）及之后出生的相关子女。因 Casa Inc. v. Trump（D. Md.）初步禁令，USCIS 表示不会对认证集体成员采取与禁令冲突的实施行动，除非获得进一步救济。改写 7 USCIS-PM O.3 与 12 USCIS-PM A.2 整章。联邦公报已正式刊发该规则（91 FR 57249，文件号 2026-18345）。",
+      "effective": "2026-09-04",
+      "announced": "2026-09-09",
+      "source": "https://www.uscis.gov/sites/default/files/document/policy-manual-updates/20260909-ChildrenOfForeignGovernmentEmployees.pdf",
+      "source_label": "USCIS 政策手册",
+      "affects": "只影响外国政府雇员在美所生子女的公民身份/永居登记路径，不改 B/F/J/H-2 短期停留说明。站点没有入籍或出生公民页。可与已记的 2026-09-04 临时最终规则条目对照。",
+      "site_pages": []
+    },
     {
       "logged": "2026-09-07",
       "country": "us",
