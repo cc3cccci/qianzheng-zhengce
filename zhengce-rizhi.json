@@ -1,6 +1,22 @@
 {
-  "updated": "2026-09-10",
+  "updated": "2026-09-14",
   "entries": [
+    {
+      "logged": "2026-09-14",
+      "country": "us",
+      "title": "H-2B 2027财年上半年名额已满",
+      "what": "USCIS 2026-09-11 警示：已收到足够申请，达到国会设定的 2027 财年（FY 2027）上半年 H-2B 法定上限。最终收件日为 2026-09-04：此后收到的、请求开工日在 2027-04-01 之前的新额度内（cap-subject）H-2B 申请将被拒收。官网未另写「补充名额」安排。免额度（cap-exempt）情形仍可按既有规则递交。",
+      "effective": "2026-09-04",
+      "announced": "2026-09-11",
+      "source": "https://www.uscis.gov/newsroom/alerts/uscis-reaches-h-2b-cap-for-first-half-of-fy-2027",
+      "source_label": "USCIS 警示",
+      "affects": "影响想找 FY2027 上半年（约 2026-10-01 至 2027-03-31 开工）新 H-2B 雇主的读者：常规额度已满，雇主不能再递新的 cap-subject 申请。不改 B/F/J 短期停留说明；H-2A 不受此上限。站点 H-2B 说明若写「名额」或递件窗口，需要对照更新。",
+      "site_pages": [
+        "h2b.html",
+        "h2.html",
+        "gangwei.html"
+      ]
+    },
     {
       "logged": "2026-09-10",
       "country": "us",
