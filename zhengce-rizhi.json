@@ -1,6 +1,18 @@
 {
-  "updated": "2026-09-14",
+  "updated": "2026-09-15",
   "entries": [
+    {
+      "logged": "2026-09-15",
+      "country": "us",
+      "title": "政策手册：取消入籍（denaturalization）转介指引",
+      "what": "USCIS 发布政策警示 PA-2026-13（2026-09-14）：更新政策手册 Volume 12 Part L，说明按 INA 340 将案件转介作撤销入籍（常称 denaturalization）的指引。手册把 Part L 更名为「Loss of U.S. Nationality and Revocation of Naturalization」；整章改写第 1 章，改写并更名第 2 章，原第 3 章内容并入第 2 章后留空。要点包括：对与美国公民相关的待审/今后申请，USCIS 会核对该公民是否合法取得国籍；说明撤销入籍的证明标准与可转介事由示例；说明何种情形会转介、哪些案件优先；入籍被撤销后，USCIS 可复查该人此前为外籍受益人递交或已批的申请。文本写明指引立即生效，并称未改动「何种情形可被撤销入籍」的既有实体标准，主要是重组与明确转介优先顺序。依据 EO 14148、EO 14161。",
+      "effective": "2026-09-14",
+      "announced": "2026-09-14",
+      "source": "https://www.uscis.gov/sites/default/files/document/policy-manual-updates/20260914-RevocationReferrals.pdf",
+      "source_label": "USCIS 政策手册",
+      "affects": "只影响已入籍人士的撤销入籍转介与后续受益人复查，不改 B/F/J/H-2 短期停留说明。站点没有入籍或撤销入籍页。",
+      "site_pages": []
+    },
     {
       "logged": "2026-09-14",
       "country": "us",
