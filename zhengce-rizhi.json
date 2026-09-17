@@ -1,6 +1,18 @@
 {
-  "updated": "2026-09-15",
+  "updated": "2026-09-17",
   "entries": [
+    {
+      "logged": "2026-09-17",
+      "country": "ca",
+      "title": "已在加的合资格工签持有人可短期学习免学签",
+      "what": "IRCC 2026-09-09 公告：已在加拿大、持有效工签的合资格临时工人，可在继续工作的同时，攻读最长 6 个月的课程或项目而无需学签；期限以 6 个月或工签到期日较早者为准。措施面向已在加的工人（公告举例包括技工、护士、实验室技师等），不是新的入境通道；全日制学习仍须学签。措施有效至 2027-12-31（或此前工签到期/措施被撤销）。",
+      "effective": "",
+      "announced": "2026-09-09",
+      "source": "https://www.canada.ca/en/immigration-refugees-citizenship/news/notices/economic-growth-public-services-contributions-temporary-workers.html",
+      "source_label": "IRCC 公告",
+      "affects": "站点加拿大页仍是占位，没有写工签持有人短期学习规则。不影响美英澳短期停留说明。",
+      "site_pages": []
+    },
     {
       "logged": "2026-09-15",
       "country": "us",
