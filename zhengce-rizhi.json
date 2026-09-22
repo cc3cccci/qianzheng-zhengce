@@ -1,6 +1,18 @@
 {
-  "updated": "2026-09-17",
+  "updated": "2026-09-22",
   "entries": [
+    {
+      "logged": "2026-09-22",
+      "country": "au",
+      "title": "指定地区文书更新（条件8549／489·887）",
+      "what": "澳大利亚联邦立法登记册公布 Migration (Designated Areas) Instrument 2026（LIN 26/004，F2026L01255），按《1994年移民条例》1.03 条「designated area」定义，重新指定条件 8549 适用的地理范围（整州/整领地或邮编列表），并废止旧令 Designated Areas 2016/044（IMMI 16/044）。说明书写明：旧令原定 2026-10-01 日落，新文书与旧表实质相同；条件 8549 要求持证人在指定地区居住、工作与学习，与 Subclass 489、Subclass 887 等签证相关。部长签署日 2026-09-18，注册日 2026-09-21，文本写明注册次日生效。",
+      "effective": "2026-09-22",
+      "announced": "2026-09-21",
+      "source": "https://www.legislation.gov.au/F2026L01255/asmade/details",
+      "source_label": "联邦立法登记册",
+      "affects": "主要影响受条件 8549 约束、或凭 489 等转 887 永居的读者；指定地区范围说明书写明与旧令实质相同。澳大利亚页仍是占位，没有写 489/887 或指定地区。不改访客/WHM 短期停留说明。",
+      "site_pages": []
+    },
     {
       "logged": "2026-09-17",
       "country": "ca",
