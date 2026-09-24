@@ -1,6 +1,42 @@
 {
-  "updated": "2026-09-22",
+  "updated": "2026-09-24",
   "entries": [
+    {
+      "logged": "2026-09-24",
+      "country": "us",
+      "title": "政策手册：递交期限里「天」的算法收紧",
+      "what": "USCIS 发布政策警示 PA-2026-15（2026-09-23）：澄清政策手册 Volume 1 Part B 第 6 章如何适用 8 CFR 1.2 对「day」的定义。仅当法规/表格说明用「若干天」计算递交或答复期限时，若末日落在周六、周日或联邦假日，纸质件可延至下一工作日收件仍算及时；电子递交不延。不按「天数」、而按实体资格要求设定的截止（例如须在 21 岁生日前递交的特殊移民少年 SIJ 等）不再因周末/假日顺延到下一工作日——此点收回 2023 年 PA-2023-10 曾把生日类截止一并顺延的做法。文本写明自 2026-10-23 起对当日及之后收到的纸质件生效，给按旧口径准备材料的人留了约一个月缓冲。",
+      "effective": "2026-10-23",
+      "announced": "2026-09-23",
+      "source": "https://www.uscis.gov/sites/default/files/document/policy-manual-updates/20260923-DefinitionOfDay.pdf",
+      "source_label": "USCIS 政策手册",
+      "affects": "影响纸质递交且截止用「天数」计算的读者，以及须在生日前递交的类别（如 SIJ）：生日落周末/假日时，自 2026-10-23 起不再自动延到下一工作日。不改 B/F/J/H-2 短期停留说明本身。站点没有专门写递交期限算法或 SIJ 页。",
+      "site_pages": []
+    },
+    {
+      "logged": "2026-09-24",
+      "country": "us",
+      "title": "政策手册：毒品贩运／人口贩运／洗钱不准入指引",
+      "what": "USCIS 发布政策警示 PA-2026-14（2026-09-23）：在政策手册 Volume 8 新增 Part D，就 INA 212(a)(2)(C) 管制品贩运、212(a)(2)(H) 重大人口贩运、212(a)(2)(I) 洗钱三类刑事相关不准入，说明定义、「理由相信」标准、证据与举证责任、豁免/例外/豁免申请，以及配偶/子女（含前配偶）因从相关非法活动获益时，在自由裁量福利中可被纳入考量的情形。文本写明指引立即生效，适用于公告日当日及之后待审或新递交的申请。",
+      "effective": "2026-09-23",
+      "announced": "2026-09-23",
+      "source": "https://www.uscis.gov/sites/default/files/document/policy-manual-updates/20260923-CriminalInadmissibility.pdf",
+      "source_label": "USCIS 政策手册",
+      "affects": "主要影响涉及毒品贩运、人口贩运或洗钱相关不准入（含家属获益）的申请人；不改 B/F/J/H-2 短期停留说明本身。站点没有刑事不准入专页。",
+      "site_pages": []
+    },
+    {
+      "logged": "2026-09-24",
+      "country": "au",
+      "title": "子女签证邮寄地址更正（Port Melbourne→Melbourne）",
+      "what": "澳大利亚联邦立法登记册公布 Migration Legislation Amendment (Arrangements for Child Visa Applications) Instrument 2026（LIN 26/100，F2026L01261），修订此前已记的 Migration (Arrangements for Child Visa Applications) Instrument 2026：把 Schedule 1 表格第 4 栏邮寄地址由「GPO Box 241 Port Melbourne Vic 3008 Australia」改为「GPO Box 241 Melbourne Vic 3001 Australia」。适用于 LIN 26/100 开始生效后递交的申请。部长签署日 2026-09-19，注册日 2026-09-21，文本写明注册次日生效。",
+      "effective": "2026-09-22",
+      "announced": "2026-09-21",
+      "source": "https://www.legislation.gov.au/F2026L01261/asmade/details",
+      "source_label": "联邦立法登记册",
+      "affects": "只改正子女/家庭类签证邮寄地址，不改访客/WHM 等短期停留说明。澳大利亚页仍是占位，没有写子女签证。",
+      "site_pages": []
+    },
     {
       "logged": "2026-09-22",
       "country": "au",
