@@ -1,6 +1,42 @@
 {
-  "updated": "2026-09-25",
+  "updated": "2026-09-28",
   "entries": [
+    {
+      "logged": "2026-09-28",
+      "country": "au",
+      "title": "在岸学签申请：特定临签持有人仍须境外递交",
+      "what": "澳大利亚联邦立法登记册公布 Migration (Visas that Preclude a Person from Lodging a Student Visa Application in Australia) Instrument 2026（LIN 26/068，F2026L01282），废止并取代即将于 2026-10-01 日落的 IMMI 2016/016。按《1994年移民条例》附表1 第1222(4)项，持文书列明的实质性临时签证者在澳大利亚境内递交 Subclass 500（学生）或 Subclass 590（学生监护人）申请一般不构成有效申请，须从境外递交。列明类别包括：403（仅 Domestic Worker Diplomatic/Consular 流）、485、600、601、602、651、771、988，以及 995 的主申请人。说明书写明继续既有安排；已关闭的 Subclass 426 不再列入。部长助理签署日 2026-09-21，注册日 2026-09-24，文本写明注册次日生效。",
+      "effective": "2026-09-25",
+      "announced": "2026-09-24",
+      "source": "https://www.legislation.gov.au/F2026L01282/asmade/details",
+      "source_label": "联邦立法登记册",
+      "affects": "主要影响持 485/访客类等列明临签、想在澳大利亚境内改申学生签的读者；不改访客/WHM 短期停留入境说明本身。澳大利亚页仍是占位，没有写在岸改学签限制。",
+      "site_pages": []
+    },
+    {
+      "logged": "2026-09-28",
+      "country": "au",
+      "title": "创业合规活动：合格出资实体名单更新",
+      "what": "澳大利亚联邦立法登记册公布 Migration (Complying Entrepreneur Activity—Funding Entities) Instrument 2026（LIN 26/055，F2026L01258），按《1994年移民条例》5.19E(6)(b) 指定合规创业活动（complying entrepreneur activity）可用的出资实体，并废止旧令 Specification of Entities 2016/074（IMMI 16/074，原定 2026-10-01 日落）。指定范围包括：联邦/州/领地机构；依法设立、从事公共资助研发或创新的机构；按《2002年风险投资法》注册或有条件注册的 VCLP/ESVCLP；以及《2003年高等教育资助法》Table A/B 高等教育提供者。说明书写明维持 IMMI 16/074 政策安排，仅作起草现代化。用于 Subclass 188/888 创业流（邀请日在 2021-07-01 前等情形依条例）。部长签署日 2026-09-18，注册日 2026-09-24，文本写明注册次日生效。",
+      "effective": "2026-09-25",
+      "announced": "2026-09-24",
+      "source": "https://www.legislation.gov.au/F2026L01258/asmade/details",
+      "source_label": "联邦立法登记册",
+      "affects": "主要影响 188/888 创业流合规活动出资安排；说明书写明政策与旧令实质延续。澳大利亚页仍是占位，没有写创业签。不改访客/WHM 短期停留说明。",
+      "site_pages": []
+    },
+    {
+      "logged": "2026-09-28",
+      "country": "au",
+      "title": "创业合规活动：排除活动名单更新",
+      "what": "澳大利亚联邦立法登记册公布 Migration (Complying Entrepreneur Activity—Excluded Activities) Instrument 2026（LIN 26/056，F2026L01259），按《1994年移民条例》5.19E(6)(a) 指定不计入合规创业活动的排除活动，并废止旧令 Specification of Activities 2016/075（IMMI 16/075，原定 2026-10-01 日落）。排除活动包括：设立、购买、投资或取得劳务派遣实体或住宅房地产权益；以及购买、投资或取得既存实体（含特许经营）权益。说明书写明维持 IMMI 16/075 的同一政策安排。用于 Subclass 188/888 创业流。部长签署日 2026-09-18，注册日 2026-09-24，文本写明注册次日生效。",
+      "effective": "2026-09-25",
+      "announced": "2026-09-24",
+      "source": "https://www.legislation.gov.au/F2026L01259/asmade/details",
+      "source_label": "联邦立法登记册",
+      "affects": "主要影响 188/888 创业流合规活动认定；说明书写明政策与旧令实质延续。澳大利亚页仍是占位，没有写创业签。不改访客/WHM 短期停留说明。",
+      "site_pages": []
+    },
     {
       "logged": "2026-09-24",
       "country": "us",
