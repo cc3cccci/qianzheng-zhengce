@@ -1,6 +1,60 @@
 {
-  "updated": "2026-09-28",
+  "updated": "2026-09-30",
   "entries": [
+    {
+      "logged": "2026-09-30",
+      "country": "ca",
+      "title": "埃博拉相关边境／移民措施再延至11月27日",
+      "what": "IRCC 于 2026-09-28 发布通知：因刚果民主共和国等地埃博拉疫情，把临时边境与移民措施再延长 60 天，至 2026-11-27。继续暂停以刚果（金）、乌干达、南苏丹为最后居住国者的移民文件；相关新申请与在办申请可继续审理但在措施有效期内不予办结；持已批签证／许可／eTA 者在措施下仍可能无法赴加。加公民与永居若过去 21 天到过上述地区，入境时需健康评估并按公共卫生要求隔离／检疫。官网正文从本环境仍常被 Akamai 拦截，日期与要点经 WebSearch／第三方对官方 notice 的引述交叉核对。",
+      "effective": "",
+      "announced": "2026-09-28",
+      "source": "https://www.canada.ca/en/immigration-refugees-citizenship/news/notices/government-extends-border-measures-response-ebola-disease-outbreak.html",
+      "source_label": "IRCC 通知",
+      "affects": "主要影响刚果（金）／乌干达／南苏丹居民或近期到过相关地区的申请人与旅客；不改一般学签／工签规则页表述。加拿大页仍是占位。",
+      "site_pages": []
+    },
+    {
+      "logged": "2026-09-30",
+      "country": "us",
+      "title": "2026年10月签证排期表已公布",
+      "what": "美国国务院发布 2026 年 10 月签证排期表（Visa Bulletin Number 19, Volume XI；FY2027 首期）。职业移民 Final Action：印度 EB-2 自 Unavailable 重开为 2013-11-01，印度 EB-5 非保留重开为 2023-12-01；Rest of World／墨西哥／菲律宾 EB-2 自 Current 倒退至 2025-01-01。递交用 Dates for Filing 表上，ROW／墨／菲 EB-2 为 2026-03-15，印度 EB-2／EB-3 仍为 2015-01-15，印度 EB-5 非保留仍为 2024-05-01。国务院说明部分 ROW 职业类倒退是为控制 FY2027 季度／年度上限。travel.state.gov 本环境 Cloudflare 拦截，排期要点与 USCIS 已刊 10 月 Dates for Filing 表及多家对官方公报的核对一致。递交 I-485 用哪张表以 USCIS visabulletininfo 为准。",
+      "effective": "2026-10-01",
+      "announced": "2026-09-29",
+      "source": "https://travel.state.gov/content/travel/en/legal/visa-law0/visa-bulletin/2027/visa-bulletin-for-october-2026.html",
+      "source_label": "国务院签证排期表",
+      "affects": "站点没有单独排期表页。不改 B/F/J/H-2 短期停留说明。EB 绿卡页如写排期口径需对照 10 月表。",
+      "site_pages": [
+        "qianzheng#eb"
+      ]
+    },
+    {
+      "logged": "2026-09-30",
+      "country": "us",
+      "title": "USCIS 指定 10 月 I-485 用哪张排期表",
+      "what": "USCIS 已指定 2026 年 10 月调整身份（I-485）用表：亲属类与职业类一律使用 Dates for Filing chart（Department of State Visa Bulletin for October 2026）。页面最近更新 2026-09-29。与 9 月（亲属 Dates for Filing、职业 Final Action）不同：10 月职业类也可按递交表判断能否递 I-485。与已记的 10 月签证排期表对照使用。",
+      "effective": "2026-10-01",
+      "announced": "2026-09-29",
+      "source": "https://www.uscis.gov/visabulletininfo",
+      "source_label": "USCIS 排期用表说明",
+      "affects": "主要影响绿卡调整身份何时可递交 I-485。不改 B/F/J/H-2 短期停留说明。站点没有单独排期表页。",
+      "site_pages": [
+        "qianzheng#eb"
+      ]
+    },
+    {
+      "logged": "2026-09-30",
+      "country": "us",
+      "title": "EB-5 申请费终局规则，11月30日起用新费率",
+      "what": "USCIS 2026-09-29 警示：国土安全部敲定 EB-5 项目专项收费终局规则（联邦公报公开查阅文件号 2026-20016，排定 2026-09-30 正式刊发），落实《2022 年 EB-5 改革与诚信法》全成本回收、处理时限目标与诚信审查要求。新费率设计自 2026-11-30 生效；该日及之后邮戳的申请／请愿须按新费缴纳。公开查阅 PDF 中的终局费率示例：I-526（含技术费）$7,615；I-526E 初始（含技术费）$7,850；I-829 $5,000；并新设 I-527（修正旧版 I-526）等；诚信基金年费等亦上调（如 I-526E 诚信基金费 $1,100）。此规则最终确定 2025-10 月拟议规则。",
+      "effective": "2026-11-30",
+      "announced": "2026-09-29",
+      "source": "https://www.uscis.gov/newsroom/alerts/uscis-adjusts-eb-5-fees-to-cover-program-costs-and-strengthen-integrity-measures",
+      "source_label": "USCIS 警示",
+      "affects": "只影响 EB-5 投资移民申请费与区域中心相关表格费用，不改 B/F/J/H-2 短期停留说明。站点没有单独 EB-5 费用页；EB 绿卡页若写投资移民费用需对照。",
+      "site_pages": [
+        "qianzheng#eb"
+      ]
+    },
     {
       "logged": "2026-09-28",
       "country": "au",
