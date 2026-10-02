@@ -1,6 +1,42 @@
 {
-  "updated": "2026-10-01",
+  "updated": "2026-10-02",
   "entries": [
+    {
+      "logged": "2026-10-02",
+      "country": "au",
+      "title": "学生签改革条例：多数持学签者续申须在境外递交",
+      "what": "澳大利亚总督于 2026-10-01 制定 Migration Amendment (Student Visa Reform) Regulations 2026（F2026L01347），修订《1994年移民条例》附表1 第1222项与附表2 部分学签条款。核心变化包括：已持 Subclass 500 并再申请主申请人学签者，除国防／外交／中小学及文书另指定类别外，申请时须人在境外；陪读（secondary）申请资格收紧，仅限国防／外交／太平洋地区护照等情形或过渡／文书例外；在岸递交条件改写为须持实质性签证且不属于部长文书指定“须境外递交”类别（或符合有限过渡例外）。文本 Date/Details 写明注册次日生效，即 2026-10-02。登记册注册时间约 2026-10-01 晚。",
+      "effective": "2026-10-02",
+      "announced": "2026-10-01",
+      "source": "https://www.legislation.gov.au/F2026L01347/asmade/details",
+      "source_label": "联邦立法登记册",
+      "affects": "影响拟在澳境内续申／换发 Subclass 500 的读者与陪读安排；不改访客签／WHM 一般入境说明本身。澳大利亚页仍是占位，没有写在岸学签递交地点规则。",
+      "site_pages": []
+    },
+    {
+      "logged": "2026-10-02",
+      "country": "au",
+      "title": "扩大须境外递交学签的临签名单（含WHM／482／访客等）",
+      "what": "澳大利亚联邦立法登记册公布 Migration (Student Visa Applications to Be Made from outside Australia) Instrument 2026（LIN 26/102，F2026L01348），依改革后的附表1 第1222(5)(e)／1222(4)(a)(ii) 指定“在澳境内持下列签证者一般不能有效递交 Subclass 500／590”的类别，并废止已记的 LIN 26/068（F2026L01282）。相对旧名单新增／纳入：Subclass 400、407、408、417（Working Holiday）、457、462（Work and Holiday）、482（Skills in Demand 与 TSS）、并保留 403（仅 Domestic Worker Diplomatic/Consular）、485、600、601、602、651、771、988、995（主申请人条件）等。签署与注册日均为 2026-10-01；文本规定在注册次日与 Student Visa Reform 条例生效二者较晚者生效——因条例于 2026-10-02 生效，本文书同日生效。",
+      "effective": "2026-10-02",
+      "announced": "2026-10-01",
+      "source": "https://www.legislation.gov.au/F2026L01348/asmade/details",
+      "source_label": "联邦立法登记册",
+      "affects": "影响持 WHM（417／462）、访客（600）、临时工签（含 482）等拟在岸改学签的读者；访客／WHM 入境说明本身未改，但“持该签在澳转学签”路径收紧。澳大利亚页仍是占位。",
+      "site_pages": []
+    },
+    {
+      "logged": "2026-10-02",
+      "country": "au",
+      "title": "学签在岸递交例外类别文书修订（LIN 26/087）",
+      "what": "澳大利亚联邦立法登记册公布 Migration (LIN 20/158: Class of Persons for Student (Temporary) (Class TU) Visa Applications) Amendment Instrument 2026（LIN 26/087，F2026L01349），配合 Student Visa Reform 条例修订 LIN 20/158：增补／调整可在岸递交的例外类别（如博士生、教育机构违约、完成学业／课程进度、特定家庭成员等），并设过渡适用（适用于文书生效当日及之后递交的申请）。签署与注册日 2026-10-01；生效条件与 F2026L01348 相同（注册次日与改革条例生效二者较晚），即 2026-10-02。",
+      "effective": "2026-10-02",
+      "announced": "2026-10-01",
+      "source": "https://www.legislation.gov.au/F2026L01349/asmade/details",
+      "source_label": "联邦立法登记册",
+      "affects": "主要影响已在澳持学签、符合博士／违约／结业等例外而仍可在岸递交的读者；一般访客／WHM 读者仍受 F2026L01348 名单约束。澳大利亚页仍是占位。",
+      "site_pages": []
+    },
     {
       "logged": "2026-10-01",
       "country": "us",
