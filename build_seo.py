@@ -243,7 +243,7 @@ def page_head(title: str, description: str, canonical: str, extra: str = "") -> 
 
 def wrap_page(title: str, description: str, path: str, body: str, crumb: str) -> str:
     return (
-        page_head(title, description, f"{SITE}/{path.lstrip('/')}")
+        page_head(title, description, f"{SITE}/{path.lstrip('/').removesuffix('.html')}")
         + "<body>\n"
         + f"  {NAV}\n"
         + f"  {CRUMBS % esc(crumb)}\n"
