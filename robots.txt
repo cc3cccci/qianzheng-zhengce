@@ -13,4 +13,4 @@ Allow: /
 User-agent: Googlebot
 Allow: /
 
-Sitemap: https://h2-chaxun.pages.dev/sitemap.xml
+Sitemap: https://visazc.com/sitemap.xml

@@ -8,7 +8,7 @@
 - 不代办签证、不代招
 - 只认官网，不认中介和自媒体
 
-线上：https://h2-chaxun.pages.dev
+线上：https://visazc.com
 
 信息架构与交互方案见 [架构方案.md](架构方案.md)。
 

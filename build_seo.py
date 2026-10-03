@@ -10,7 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 TODAY = "2026-08-14"
-SITE = "https://h2-chaxun.pages.dev"
+SITE = "https://visazc.com"
 DESC = (
     "免费查阅美国劳工部公开的 H-2A 农业和 H-2B 非农季节工岗位，"
     "中文翻译职位、工资、开工日和雇主联系方式。非官方，不收费，不代办签证。"

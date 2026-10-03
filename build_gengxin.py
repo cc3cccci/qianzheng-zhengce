@@ -21,7 +21,7 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-SITE = "https://h2-chaxun.pages.dev"
+SITE = "https://visazc.com"
 RECENT_N = 8
 
 PAGE_LABELS = {
